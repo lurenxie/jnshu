@@ -1,0 +1,123 @@
+html,body {
+    margin: 0;
+    background: #EFF0F4;
+}
+
+header {
+    background: #68CDD5;
+    overflow: hidden;
+}
+.g-hea-left,.g-hea-main,.g-hea-right{
+    float: left;
+}
+.g-hea-left {
+    width: 30%;
+    margin-left: -100%;
+}
+.g-hea-right {
+    width: 30%;
+    margin-left: -30%;
+    text-align: right;
+}
+.g-hea-main {
+    width: 100%;
+    text-align: center;
+}
+
+.u-hea-main {
+    margin: 2.5% 30%;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 270%;
+    color: #fff;
+    /*line-height: 70px;*/
+}
+
+.u-hea-left {
+    margin: 8.33%;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 230%;
+    color: #fff;
+    /*line-height: 70px;*/
+}
+
+.u-hea-right {
+    margin: 8.33%;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 230%;
+    color: #fff;
+    /*line-height: 70px;*/
+}
+.g-inp1,.g-inp2,.g-inp3 {
+    background: #fff;
+}
+.u-inp-img1 {
+    margin: 2.5% 4%;
+    vertical-align:middle;
+}
+
+.u-inp-pnum {
+    height: 50px;
+    width: auto;
+    margin: 20.5px 0;
+    padding: 0 0 0 30px ;
+    border-style: none;
+    border-left-style: solid;
+    border-color: #EBEDEC;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 230%;
+    color: #EBEDEC;
+    vertical-align:middle;
+    outline:none;
+}
+.u-inp-img2 {
+    margin: 2.5% 4%;
+    vertical-align:middle;
+}
+.u-inp-pd {
+    height: 50px;
+    width: auto;
+    margin: 20.5px 0;
+    padding: 0 0 0 30px ;
+    border-style: none;
+    border-left-style: solid;
+    border-color: #EBEDEC;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 230%;
+    color: #EBEDEC;
+    vertical-align:middle;
+    outline:none;
+}
+.g-inp3 {
+    height: auto;
+    margin-top: 75px;
+    margin-bottom: 0;
+    text-align: center;
+    background: #68CDD5;
+}
+.u-inp-sub {
+    vertical-align:middle;
+    border-style: none;
+    background: #68CDD5;
+    margin: 2.5% 30%;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 270%;
+    color: #fff;
+}
+.u-forget-box {
+    overflow: hidden;
+}
+.u-forget {
+    float: right;
+    margin: 2.5%;
+    font-family: sans-serif, "宋体","仿宋";
+    font-weight: lighter;
+    font-size: 200%;
+    color: #68CDD5;
+    text-decoration:underline;
+}

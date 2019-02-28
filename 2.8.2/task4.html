@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="task4.css" type="text/css" />
 </head>
 <body>
-
+    <header>
+        <div class="g-hea-main"><p class="u-hea-main">登陆</p></div>
+        <div class="g-hea-left"><p class="u-hea-left">关闭</p></div>
+        <div class="g-hea-right"><p class="u-hea-right">注册</p></div>
+    </header>
+    <main>
+        <form method="post" action="ssdf">
+            <p class="g-inp1">
+                <img  class="u-inp-img1" src="images/loading_1.jpg" alt="你图炸了"/>
+                <input class="u-inp-pnum" type="text" name="phonenum" value="请输入手机号码" onfocus="if (value =='请输入手机号码'){value =''}" onblur="if (value ==''){value='请输入手机号码'}" />
+            </p>
+            <p class="g-inp2">
+                <img class="u-inp-img2" src="images/loading_2.jpg" alt="你图炸了"/>
+                <input class="u-inp-pd" id="pw" type="text" name="password" value="请输入密码" onfocus="if(value=='请输入密码'){value=''} this.type='password'" onblur="show_pw()" />
+            </p>
+            <p class="g-inp3">
+                <input class="u-inp-sub" type="submit" name="submit" value="登陆" />
+            </p>
+        </form>
+    </main>
+    <footer>
+        <div class="u-forget-box"><p class="u-forget">忘记密码</p></div>
+    </footer>
 </body>
+<script type="text/javascript">
+    function show_pw()
+    {
+        var pw=document.getElementById("pw")
+        if(pw.value==""){
+            pw.type="text"
+            pw.value="请输入密码"
+        }
+
+    }
+</script>
 </html>
