@@ -1,4 +1,7 @@
 html,body {
+    /*height: auto;*/
+    /*width: 100%;*/
+    margin: 0;
     background: #68CDD5;
 }
 
@@ -8,8 +11,8 @@ img {
 
 header {
     height: auto;
-    width: 100%;
-    margin: 25px;
+    width: 95%;
+    padding: 5%;
 }
 
 main {
