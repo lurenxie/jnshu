@@ -1,0 +1,47 @@
+html,body {
+    background: #68CDD5;
+}
+
+img {
+    display: inline-block;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    margin: 25px;
+}
+
+main {
+    height: auto;
+    width: 90%;
+    margin: 0 5%;
+}
+    .m-logo {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .u-text {
+        margin: 15%;
+        font-family: sans-serif, "宋体","仿宋";
+        font-weight: lighter;
+        font-size: 230%;
+        color: #fff;
+        line-height: 70px;
+    }
+
+    .m-bot {
+        height: auto;
+        width: auto;
+        margin: 15% 0;
+    }
+        .m-bot-box1 {
+            margin: 15%;
+            float: left;
+        }
+        .m-bot-box2 {
+            margin: 15%;
+            float: right;
+        }
