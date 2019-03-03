@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #F0F0F0;
+}
+
+
+header {
+    background: #29BEDF;
+    display: flex;
+    justify-content: flex-start;
+}
+.s-heaimg {
+    width: 3.4rem;
+    height: 2.8rem;
+    margin: 0.8rem;
+    background-image: url(images/img.png);
+    background-position: -54px 0;
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    -ms-transform: scale(0.55);
+    -o-transform: scale(0.55);
+    transform: scale(0.7);
+}
+nav {
+    margin: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 0.1rem solid #ccc;
+}
+.f-nav-fakebox {
+    width: 2.5rem;
+}
+nav span {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #ABABAB;
+}
+.s-mnavimg {
+    width: 2.5rem;
+    height: 4rem;
+    background-image: url(images/img.png);
+    background-position: 0 0;
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    -ms-transform: scale(0.55);
+    -o-transform: scale(0.55);
+    transform: scale(0.55);
+}
+ul {
+    position: relative;
+    margin: 2rem;
+    padding: 0;
+    border: 0.1rem solid #ababab70;
+    background: #fff;
+}
+.f-ullifelx {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-ullibox1 {
+    height: 6rem;
+    margin: 0 0 1rem 0;
+    border-bottom: 0.1rem solid #FBB436;
+}
+.f-ulli-text1 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #FBB436;
+}
+.f-ulli-box {
+    width: 80%;
+    height: 6rem;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #29BEDF;
+}
+.f-ulli-text2 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: #fff;
+}
+.f-ulli-text3 {
+    margin: 1rem 0 0 0;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #ABABAB;
+}
+.u-circle {
+    display: flex;
+    justify-content: center;
+}
+.u-circle1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #29BEDF;
+}
+.u-circle2 {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #eee;
+}
+.u-rightbox {
+    position: absolute;
+    top: 47%;
+    left: 92%;
+    list-style: none;
+}
+.u-right {
+    width: 2.8rem;
+    height: 5.6rem;
+    background-image: url(images/img.png);
+    background-position: -25px 0;
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    -ms-transform: scale(0.55);
+    -o-transform: scale(0.55);
+    transform: scale(0.55);
+}
