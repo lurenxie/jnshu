@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- 自定义样式 -->
+        <link href="task7.2.css" type="text/css" rel="stylesheet" />
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+    <header>
+        <div class="header-img1"></div>
+        <div><span class="header-text">投票</span></div>
+        <div class="header-img2"></div>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="main-audio-box1">
+                    <span class="main-audio-text1">发言谈论结束，大家请投票</span>
+                    <div class="main-audio-bbox">
+                        <audio src="task7.mp3" id="aud"></audio>
+                        <div class="main-audio" id="playpause"></div>
+                    </div>
+                </div>
+                <div class="main-audio-tri"></div>
+                <div class="main-audio-box2"><span class="main-audio-text2">点击得票数最多的人的头像</span></div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">1号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">2号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">3号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">法官</span>
+                        <span class="ul-li-square1-text2">4号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">5号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">医生</span>
+                        <span class="ul-li-square1-text2">6号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">杀手</span>
+                        <span class="ul-li-square1-text2">7号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">8号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">9号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">1号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">2号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">3号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">1号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">2号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">3号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">1号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">2号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">3号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+            <li class="ul-li-square">
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">1号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">2号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+                <div class="ul-li-square1">
+                    <div class="ul-li-square1-text">
+                        <span class="ul-li-square1-text1">水民</span>
+                        <span class="ul-li-square1-text2">3号</span>
+                    </div>
+                    <div class="ul-li-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div><span>投死</span></div>
+    </footer>
+
+    <script type="text/javascript">
+        var aud = document.getElementById("aud");
+        var img = document.getElementById("playpause");
+        img.onclick = function() {
+            console.log('dianj')
+            if (aud.paused) {
+                aud.play();
+            } else {
+                aud.pause();
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

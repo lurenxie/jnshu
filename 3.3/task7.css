@@ -17,10 +17,10 @@ header {
     margin: 0.8rem;
     background-image: url(images/img.png);
     background-position: -54px 0;
-    -webkit-transform: scale(0.55);
-    -moz-transform: scale(0.55);
-    -ms-transform: scale(0.55);
-    -o-transform: scale(0.55);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
     transform: scale(0.7);
 }
 nav {
