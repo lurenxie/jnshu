@@ -12,8 +12,8 @@ header {
     justify-content: flex-start;
 }
 .s-heaimg {
-    width: 3.4rem;
-    height: 2.8rem;
+    width: 34px;
+    height: 28px;
     margin: 0.8rem;
     background-image: url(images/img.png);
     background-position: -54px 0;
@@ -41,8 +41,8 @@ nav span {
     color: #ABABAB;
 }
 .s-mnavimg {
-    width: 2.5rem;
-    height: 4rem;
+    width: 25px;
+    height: 40px;
     background-image: url(images/img.png);
     background-position: 0 0;
     -webkit-transform: scale(0.55);
@@ -124,8 +124,8 @@ ul {
     list-style: none;
 }
 .u-right {
-    width: 2.8rem;
-    height: 5.6rem;
+    width: 28px;
+    height: 56px;
     background-image: url(images/img.png);
     background-position: -25px 0;
     -webkit-transform: scale(0.55);

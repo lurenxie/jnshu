@@ -14,8 +14,8 @@ header span {
     color: #fff;
 }
 .header-ico1 {
-    width: 5.1rem;
-    height: 4.3rem;
+    width: 51px;
+    height: 43px;
     margin: 0.8rem;
     background-image: url(images/img.png);
     background-position: -203px 0;
@@ -27,8 +27,8 @@ header span {
 }
 
 .header-ico2 {
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
     margin: 0.8rem;
     background-image: url(images/img.png);
     background-position: -163px 0;
@@ -57,12 +57,12 @@ li {
     background-color: #29BEDF;
 }
 .mian-ico {
-    width: 15rem;
-    height: 8.8rem;
+    width: 150px;
+    height: 88px;
     margin: 1rem 0;
     background-image: url(images/image3.png);
-    -webkit-background-size: 7.6rem;
-    background-size: 15rem;
+    -webkit-background-size: 150px;
+    background-size: 150px;
 }
 .main-headtext1 {
     font-size: 1.5rem;

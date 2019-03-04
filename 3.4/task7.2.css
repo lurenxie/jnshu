@@ -18,8 +18,8 @@ header {
     color: #fff;
 }
 .header-img1 {
-    width: 3.9rem;
-    height: 4.2rem;
+    width: 39px;
+    height: 42px;
     margin: 0.3rem;
     background-image: url(images/img.png);
     background-position: -124px 0;
@@ -31,8 +31,8 @@ header {
 }
 
 .header-img2 {
-    width: 3.6rem;
-    height: 4.2rem;
+    width: 36px;
+    height: 42px;
     margin: 0.3rem;
     background-image: url(images/img.png);
     background-position: -88px 0;
@@ -64,8 +64,8 @@ li {
     width: 4.5rem;
 }
 .main-audio {
-    width: 5.2rem;
-    height: 5.3rem;
+    width: 52px;
+    height: 53px;
     background-image: url(images/img.png);
     background-position: -254px 0;
     -webkit-transform: scale(0.47);
