@@ -348,7 +348,7 @@ header {
     color: #9E9E9E;
 }
 .mian-text13box {
-    width: 20rem;
+    /*width: 20rem;*/
 }
 
 .main-headline1box {
@@ -552,16 +552,12 @@ header {
     justify-content: center;
     align-items: center;
 }
-.main4-box :hover {
+.main4-box:hover {
     box-shadow: 0 0 1px #9E9E9E;
-}
-.main4-clearhover :hover {
-    box-shadow: 0 0 1px #fff!important;
 }
 .main4-box {
     padding: 0;
 }
-
 .main4-div {
     background-color: #fff;
     box-shadow: 0 0 1px #9E9E9E;
@@ -573,7 +569,7 @@ header {
     /*justify-content: space-around;*/
     /*align-items: center;*/
 /*}*/
-ul li {
+.main5-div ul li {
     margin: 1rem;
     font-size: 1.2rem;
     color: #9E9E9E;
