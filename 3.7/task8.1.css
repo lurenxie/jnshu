@@ -552,7 +552,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.main4-box:hover {
+.main4-box :hover {
     box-shadow: 0 0 1px #9E9E9E;
 }
 .main4-box {
