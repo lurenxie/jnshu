@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link href="../css/task11.css" type="text/css" rel="stylesheet"/>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <button class="btn1">关闭</button>
+    <button class="btn2">登陆</button>
+    <button class="btn3">注册</button>
+</header>
+<main>
+    <div class="main-div">
+        <label class="label1" for="input1"></label>
+        <input id="input1" type="text" value="请输入手机号码" onfocus="if (value =='请输入手机号码'){value =''}" onblur="if (value ==''){value='请输入手机号码'}">
+    </div>
+    <div class="main-div">
+        <label class="label2" for="pw"></label>
+        <input id="pw" type="text" value="请输入密码" onfocus="if(value=='请输入密码'){value=''} this.type='password'" onblur="show_pw()">
+    </div>
+    <div>
+        <button class="btn4">登陆</button>
+    </div>
+</main>
+<footer>
+    <span><a href="#">忘记密码</a></span>
+</footer>
+</body>
+<script type="text/javascript">
+    function show_pw()
+    {
+        var pw=document.getElementById("pw")
+        if(pw.value==""){
+            pw.type="text"
+            pw.value="请输入密码"
+        }
+
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

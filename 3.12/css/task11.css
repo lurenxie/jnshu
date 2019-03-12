@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #eff0f4; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5fc0cd;
+  color: #fff; }
+  header .btn1, header .btn3 {
+    border: 0;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background-color: #5fc0cd; }
+  header .btn2 {
+    border: 0;
+    font-size: 1.8rem;
+    background-color: #5fc0cd; }
+
+label {
+  margin: 0; }
+
+.label1::before {
+  display: inline-block;
+  content: '';
+  height: 2.05rem;
+  width: 1.35rem;
+  margin: 1.5rem 2.25rem;
+  background-image: url(../images/image2.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  background-size: 1.35rem 2.05rem;
+  vertical-align: middle; }
+
+.label2::before {
+  display: inline-block;
+  content: '';
+  height: 2.15rem;
+  width: 1.45rem;
+  margin: 1.5rem 2.25rem;
+  background-image: url(../images/image1.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  background-size: 1.45rem 2.15rem;
+  vertical-align: middle; }
+
+input {
+  padding: 0 0 0 1.5rem;
+  border-style: none;
+  border-width: 0.2rem;
+  border-left-style: solid;
+  border-color: #eaedee;
+  font-size: 1.6rem;
+  color: #eaedee; }
+
+.main-div {
+  height: 5rem;
+  margin-top: 0.75rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+
+.btn4 {
+  width: 100%;
+  height: 5rem;
+  margin-top: 3.5rem;
+  border: 0;
+  font-size: 1.8rem;
+  background-color: #5fc0cd;
+  color: #fff; }
+
+footer {
+  margin: 1rem 1.5rem;
+  float: right;
+  font-size: 1.6rem;
+  color: #5fc0cd; }
+
+/*# sourceMappingURL=task11.css.map */

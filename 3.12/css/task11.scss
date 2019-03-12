@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+}
+$bacground-color1: #5fc0cd;
+$text-color1: #eaedee;
+@mixin flex-short($fd,$jc,$ai) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin before-short($height,$width,$bgimage,$bgsize) {
+  display: inline-block;
+  content: '';
+  height: $height;
+  width: $width;
+  margin: 1.5rem 2.25rem;
+  background-image: $bgimage;
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  background-size:$bgsize;
+  vertical-align: middle;
+}
+body {
+  background-color: #eff0f4;
+}
+header {
+  @include flex-short(row,space-between,center);
+  background-color: $bacground-color1;
+  color: #fff;
+  .btn1,.btn3  {
+    border: 0;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    background-color: $bacground-color1;
+  }
+  .btn2 {
+    border: 0;
+    font-size: 1.8rem;
+    background-color: $bacground-color1;
+  }
+}
+label {
+  margin: 0;
+}
+.label1::before {@include before-short(2.05rem,1.35rem,url(../images/image2.png),1.35rem 2.05rem)}
+.label2::before {@include before-short(2.15rem,1.45rem,url(../images/image1.png),1.45rem 2.15rem)}
+
+input {
+  padding: 0 0 0 1.5rem;
+  border-style: none;
+  border-width: 0.2rem;
+  border-left-style: solid;
+  border-color: $text-color1;
+  font-size: 1.6rem;
+  color: $text-color1;
+}
+.main-div {
+  height: 5rem;
+  margin-top: 0.75rem;
+  background-color: #fff;
+  @include flex-short(row,flex-start,center)
+}
+.btn4 {
+  width: 100%;
+  height: 5rem;
+  margin-top: 3.5rem;
+  border: 0;
+  font-size: 1.8rem;
+  background-color: $bacground-color1;
+  color: #fff;
+}
+footer {
+  margin: 1rem 1.5rem;
+  float: right;
+  font-size: 1.6rem;
+  color: $bacground-color1;
+}
+
+
+
+
