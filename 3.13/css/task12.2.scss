@@ -1,0 +1,142 @@
+$bacground-color1: #59C0CF;
+$bacground-color2: #51A7B4;
+$bacground-color3: #ababab;
+$bacground-color4: #eee;
+
+@mixin background-images($width,$height,$background-image,$background-position,$transform) {
+  width: $width;
+  height: $height;
+  background-image: $background-image;
+  background-position:$background-position;
+  -webkit-transform: scale($transform);
+  -moz-transform: scale($transform);
+  -ms-transform: scale($transform);
+  -o-transform: scale($transform);
+  transform: scale($transform);
+}
+@mixin font-text($size,$weight,$color){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+.g-itemflex2 {@include background-images(5rem,5rem,url("../images/imgsf.png"),0 -12.9rem,0.45);}
+.u-mimg1 {@include background-images(2.8rem,2.4rem,url("../images/imgsf.png"),0 -6.4rem,0.45)}
+.u-mimg2 {@include background-images(2rem,3.4rem,url("../images/imgsf.png"),0 -3.1rem,0.45);}
+.u-mimg3 {@include background-images(2rem,2.3rem,url("../images/imgsf.png"),0 -0.8rem,0.45);}
+.u-fooimg1 {@include background-images(5rem,4rem,url("../images/imgsf.png"),0 -17.4rem,0.45);}
+.u-fooimg2 {@include background-images(9.35rem,9.35rem,url("../images/imgsf.png"),0 -21.4rem,0.45)}
+.u-fooimg3 {@include background-images(4.2rem,4rem,url("../images/imgsf.png"),0 -8.8rem,0.45)}
+.f-mtext1 {@include font-text(1.15rem,lighter,lighter)}
+.f-mtext2 {@include font-text(1.5rem,initial,#000)}
+.f-mtext3 {@include font-text(1.5rem,lighter,red)}
+.navtext {@include font-text(1.3rem,lighter,$bacground-color3)}
+
+html {
+  font-size: 62.5%;
+}
+.g-conflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: $bacground-color1;
+  .g-itemflex1 {
+    background-color: $bacground-color2;
+    border: 1px solid $bacground-color2;
+    border-radius: 0.5rem;
+    .u-heabut1 {
+      width: 7rem;
+      height: 3.4rem;
+      background-color: $bacground-color2;
+      color: #fff;
+      border: 1px solid $bacground-color2;
+      border-radius: 0.5rem 0 0 0.5rem;
+      .u-heabut1t {font-size: 1.5rem;line-height: 2rem;}
+    }
+    .u-heabut2 {
+      width: 7rem;
+      height: 3.4rem;
+      background-color: #fff;
+      color: $bacground-color2;
+      border: 1px solid #fff;
+      border-radius: 0.5rem;
+      .u-heabut2t {font-size: 1.5rem;line-height: 2rem;}
+    }
+  }
+  .g-itemflex3 {
+    width: 5rem;
+    height: 4.5rem;
+  }
+}
+
+main {margin-bottom: 6rem;
+  nav {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 0.1rem solid $bacground-color4;
+    .f-navbox {
+      width: 33.33333%;
+      margin: 0.5rem 0;
+      float: left;
+      .f-navbut {
+        width: 100%;
+        height: 4rem;
+        border: 0;
+        padding: 0;
+        background: #fff;
+        color: $bacground-color3;
+        border-right: 0.1rem solid $bacground-color4;
+        &::after {float: right;margin: 1.2rem 0;
+        }
+      }
+    }
+  }
+  .f-mflex {
+    padding: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.01rem solid $bacground-color4;
+    .f-fitem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .f-minline {display: inline-block;}
+      .f-texthide {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .f-fiitem {
+      padding: 0 0 0 2.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .f-fiiitem {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .f-fiitem1 {padding: 0 0 0 0.4rem;}
+  }
+}
+footer {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  bottom: 0;
+  background: #F9FAFD;
+  .f-fooflex {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .f-fooflex1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: $bacground-color2;
+    }
+  }
+}
