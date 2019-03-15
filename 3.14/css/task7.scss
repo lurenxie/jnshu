@@ -1,0 +1,154 @@
+@import "reset";
+@import "module";
+
+
+
+.s-heaimg {@include module-ico(34px,28px,0.8rem,url(../images/img.png),-54px 0,0.7);}
+.s-mnavimg {@include module-ico(25px,40px,0,url(../images/img.png),0 0,0.55);}
+.u-right {@include module-ico(28px,56px,0,url(../images/img.png),-25px 0,0.55);}
+
+
+
+
+body {
+  background: #F0F0F0;
+}
+input{
+  display: none;
+}
+header {
+  background: #29BEDF;
+  @include module-dflex(row,flex-start,center);
+}
+#menubutton:checked ~ menu{
+  left:0;
+}
+#menubutton:checked ~ main{
+  margin-left: 50%;
+  border: 0.5rem solid #29BEDF;
+}
+main {
+  //float: right;
+  width: 100%;
+  transition: margin-left 1s;
+  -moz-transition: margin-left 1s;
+  -webkit-transition: margin-left 1s;
+  -o-transition: margin-left 1s;
+}
+menu {
+  color: #29bde0;
+  position: absolute;
+  float: left;
+  width: 50%;
+  left: -50%;
+  padding: 0;
+  margin: 0;
+  @include module-dflex(column,flex-start,center);
+  transition: left 1s;
+  -moz-transition: left 1s;
+  -webkit-transition: left 1s;
+  -o-transition: left 1s;
+}
+.menu-div {
+  width: 100%;
+  height: 5rem;
+  border-bottom: 0.1rem solid #ccc;
+  @include module-dflex(row,space-between,center);
+}
+.menu-divdiv {
+  @include module-dflex(row,center,center);
+}
+.menu-icodiv {
+  width: 2rem;
+  height: 2rem;
+  border: 0.15rem solid #29bde0;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  @include module-dflex(row,center,center);
+}
+.menu-icodiv span {
+  padding: 0;
+}
+nav {
+  margin: 1.5rem 2rem;
+  @include module-dflex(row,space-between,center);
+  background: #fff;
+  border: 0.1rem solid #ccc;
+}
+.f-nav-fakebox {
+  width: 2.5rem;
+}
+nav span {
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #ABABAB;
+}
+ul {
+  position: relative;
+  margin: 2rem;
+  padding: 0;
+  border: 0.1rem solid #ababab70;
+  background: #fff;
+}
+.f-ullifelx {
+  width: 100%;
+  @include module-dflex(column,center,center);
+}
+.f-ullibox1 {
+  height: 6rem;
+  margin: 0 0 1rem 0;
+  border-bottom: 0.1rem solid #FBB436;
+}
+.f-ulli-text1 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #FBB436;
+}
+.f-ulli-box {
+  width: 80%;
+  height: 6rem;
+  margin: 1rem 0 0 0;
+  @include module-dflex(row,center,center);
+  background: #29BEDF;
+}
+.f-ulli-text2 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  color: #fff;
+}
+.f-ulli-text3 {
+  margin: 1rem 0 0 0;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #ABABAB;
+}
+.u-circle {
+  display: flex;
+  justify-content: center;
+}
+.u-circle1 {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #29BEDF;
+}
+.u-circle2 {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #eee;
+}
+.u-rightbox {
+  position: absolute;
+  top: 47%;
+  left: 92%;
+  list-style: none;
+}

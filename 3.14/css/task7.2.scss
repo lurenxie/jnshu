@@ -1,0 +1,103 @@
+@import "reset";
+@import "module";
+
+
+.header-img1 {@include module-ico(39px,42px,0.3rem,url(../images/img.png),-124px 0,0.47);}
+.header-img2 {@include module-ico(36px,42px,0.3rem,url(../images/img.png),-88px 0,0.47);}
+.main-audio {@include module-ico(52px,52px,0,url(../images/img.png),-254px 0,0.47);}
+
+
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #29BEDF;
+}
+
+header {
+  height: 4rem;
+  @include module-dflex(row,space-between,center);
+  background-color: #29BEDF;
+}
+.header-text {
+  font-size: 1.7rem;
+  color: #fff;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.main-audio-box1 {
+  height: 4rem;
+  @include module-dflex(row,space-between,center);
+  background-color: #B9E9F5;
+}
+.main-audio-text1 {
+  margin: 0 0 0 2rem;
+  font-size: 1.3rem;
+}
+.main-audio-bbox {
+  width: 4.5rem;
+}
+
+.main-audio-box2 {
+  margin: 0.5rem 0;
+}
+.main-audio-text2 {
+  margin: 0 0 0 3rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.main-audio-tri {
+  width: 0;
+  height:0;
+  margin: 0 0 0 3rem;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.8rem solid #B9E9F5;
+}
+.ul-li-square {@include module-dflex(row,space-around,center);}
+.ul-li-square1-text {
+  @include module-dflex(column,center,center);
+  background-color: #fff;
+}
+.ul-li-square1-text1 {
+  padding: 1.62rem 2rem;
+  margin: 0.3rem 0.3rem 0 0.3rem;
+  font-size: 1.5rem;
+  background-color: #F4C97B;
+}
+.ul-li-square1-text2 {
+  padding: 0 2.567rem;
+  margin: 0 0.3rem 0.3rem 0.3rem;
+  font-size: 1.2rem;
+  background-color: #83B09B;
+  color: #fff;
+}
+.ul-li-icon {
+  @include module-ico-size(7.6rem,1.7rem,1rem 0,url(../images/image2.png),7.6rem);
+  visibility: hidden;
+}
+.ul-li-square1:hover .ul-li-icon {
+  visibility: visible;
+}
+footer {
+  width: 100%;
+  height: 8rem;
+  position: fixed;
+  bottom: 0;
+  @include module-dflex(row,center,center);
+  border-top: 0.1rem solid #fff;
+  background-color: #29BEDF;
+}
+footer span {
+  padding: 1.2rem 11rem;
+  background-color: #FBB436;
+  text-align: center;
+  line-height: 4rem;
+  color: #fff;
+  font-size: 1.7rem;
+}

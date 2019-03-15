@@ -1,0 +1,117 @@
+@import "reset";
+@import "module";
+
+.header-ico1 {@include module-ico(51px,43px,0.8rem,url(../images/img.png),-203px 0,0.47);}
+.header-ico2 {@include module-ico(40px,40px,0.8rem,url(../images/img.png),-163px 0,0.47);}
+
+
+
+
+html {
+  font-size: 62.5%;
+}
+header {
+  @include module-dflex(row,space-between,center);
+  background-color: #29BEDF;
+  border-bottom: 0.01rem solid #fff;
+}
+header span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+
+main {
+  width: auto;
+  padding: 0 0 0 50%;
+}
+ul {
+  padding: 0;
+  margin: 0 0 8rem 0;
+}
+li {
+  list-style: none;
+}
+.text-margin {
+  margin: 0 4rem;
+}
+.main-li-ico {
+  padding: 0 0 1rem 0;
+  @include module-dflex(column,center,center);
+  background-color: #29BEDF;
+}
+.mian-ico {@include module-ico-size(150px,88px,1rem 0,url(../images/image3.png),150px);}
+.main-headtext1 {
+  font-size: 1.5rem;
+  color: #FEC766;
+  font-weight: bold;
+}
+.main-headtext-text1 {
+  padding: 0 0 2rem 0;
+}
+.main-headtext2 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: lighter;
+}
+.main-headtextbox1 {
+  align-self: start;
+  @include module-dflex(row,flex-start,center);
+}
+.main-headtextbox2 {
+  align-self: start;
+}
+.text-margin2 {
+  /*margin: 0 4rem;*/
+}
+.main-main-text-li {
+  border-bottom: 0.01rem solid #B7B7B7;
+}
+.main-main-text1 {
+  padding: 1rem 0;
+  @include module-dflex(row,space-between,center);
+}
+.main-main-text2 {
+  padding: 0 0 1rem 0;
+  @include module-dflex(column,flex-start,flex-start);
+  font-size: 1.2rem;
+  color: #B7B7B7;
+}
+.main-main-text11 {
+  font-size: 1.4rem;
+  color: #000;
+}
+.main-main-text12 {
+  font-size: 1.1rem;
+  color: #B7B7B7;
+}
+footer {
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(41,190,223,0.5);
+  @include module-dflex(row,space-around,center);
+}
+.footer-box1 {
+  width: 12rem;
+  height: 4rem;
+  background-color: #F56F6E;
+  @include module-dflex(row,center,center);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.footer-box2 {
+  width: 12rem;
+  height: 4rem;
+  background-color: #FBB436;
+  @include module-dflex(row,center,center);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.footer-text {
+  font-size: 1.7rem;
+  color: #fff;
+}

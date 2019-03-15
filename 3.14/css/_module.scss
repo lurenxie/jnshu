@@ -1,0 +1,26 @@
+@mixin module-ico($width,$height,$margin,$image,$position,$transform) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  background-image: $image;
+  background-position: $position;
+  -webkit-transform: scale($transform);
+  -moz-transform: scale($transform);
+  -ms-transform: scale($transform);
+  -o-transform: scale($transform);
+  transform: scale($transform);
+}
+@mixin module-ico-size($width,$height,$margin,$image,$size) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  background-image: $image;
+  -webkit-background-size: $size;
+  background-size: $size;
+}
+@mixin module-dflex($flex-direction,$justify-content,$align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
