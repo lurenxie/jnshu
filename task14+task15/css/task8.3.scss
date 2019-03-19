@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import "reset";
+@import "element";
+
+.headico1 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-29px 0,0.7);}
+.headico2 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-55px 0,0.7);}
+.headico3 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-82px 0,0.7);}
+.footer-ico {@include module-imgscale(92px,92px,0,url(../images/img/wximg.png),0 0,1);}
+.mianbox-box2ico {@include module-imgscale(15px,16px,0,url(../images/img1.png),-13px 0,0.7);}
+
+
+body {
+  background-color: #FAFBFA;
+}
+@media (max-width: 767px) {
+  /*在小于768像素的屏幕里,这里的样式才生效*/
+  .ul-box {@include module-dflex(column,center,center);}
+  .li-border {
+    width: 100%;
+    text-align: center;
+  }
+  .a-active {
+    font-size: 1.2rem;
+    color: #fff!important;
+    background-color: #36C388!important;
+  }
+  .footer-box {@include module-dflex(column,center,center);}
+  .footer-box1 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box3 {@include module-dflex(column,center,flex-start);}
+}
+@media (min-width: 768px) {
+  /*在大于768像素的屏幕里,这里的样式才生效*/
+  .ul-box {
+    margin: 0 10rem 0 0;
+  }
+  .li-box {
+    float: right;
+  }
+  .li-border {
+
+  }
+  .headzhiye {
+    border-bottom: 0.3rem solid #fff!important;
+  }
+  .a-active {
+    font-size: 1.2rem;
+    color: #fff!important;
+    background-color: #20B176!important;
+  }
+  .footer-box {@include module-dflex(column,center,center);}
+  .footer-box1 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box3 {@include module-dflex(column,center,flex-start);}
+}
+@media (min-width: 992px) {
+  /*在大于992像素的屏幕里,这里的样式才生效*/
+  .footer-box {@include module-dflex(row,center,center);}
+  .footer-box1 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box3 {@include module-dflex(column,center,flex-end);}
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+header {@include module-dflex(row,space-around,center);
+  font-size: 1.1rem;
+  color: #20B176;
+}
+.headico-box {@include module-dflex(row,center,center);}
+.nav-style {
+  background-color: #20B176;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.a-style {
+  background-color: #20B176!important;
+  color: #fff!important;
+  font-size: 1.2rem;
+}
+footer {
+  background-color: #20B176;
+}
+.footer-box4 {@include module-dflex(row,center,center);
+  border-top: 0.2rem solid #9E9E9E;
+}
+.footer-text1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer-text2 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.footer-margin {
+  margin: 1rem 0;
+}
+.footer-style1 {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  border-left: 0.1rem solid #fff;
+  border-right: 0.1rem solid #fff;
+}
+.footer-style2 {
+  margin: 0 2rem 0 0;
+}
+.footer-text3 {
+  font-size: 1rem;
+  color: #fff;
+}
+.main-text-text {
+  padding: 1rem 1.5rem;
+  border-bottom: 1.5px #e6e6e6 solid;
+}
+.main-text-text1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.main-text-text2 {
+  font-size: 1.4rem;
+  color: #20B176;
+}
+.main-text-text3 {
+  font-size: 1.4rem;
+  color: #000;
+}
+.mainbox-box {
+  margin: 2rem 0;
+  border: 0.1rem solid #ddd;
+}
+.mianbox-box1 {@include module-dflex(row,center,center);
+  border: 0.05rem solid #ddd;
+}
+.mainbox-img {
+  /*width: 100%;*/
+  padding: 0;
+  /*margin: 15px;*/
+  margin: 1rem;
+}
+.mianbox-box1text {@include module-dflex(column,center,flex-start);}
+.mianbox-box1text1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mianbox-box1text2 {
+  margin: 0 1rem 0 0;
+  font-size: 1.4rem;
+}
+.mianbox-box2 {@include module-dflex(row,flex-start,center);}
+.mianbox-box2icobox {@include module-dflex(row,flex-start,center);
+  width: 50%;
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box2icoboxtext {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #9E9E9E;
+}
+.mianbox-box3 {@include module-dflex(row,center,center);}
+.mianbox-box3icobox {@include module-dflex(row,flex-start,center);
+  width: 50%;
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box3icoboxtext1 {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #9E9E9E;
+}
+.mianbox-box3icoboxtext2 {
+  margin: 1rem 0 1rem 1rem;
+  font-size: 1.3rem;
+  color: red;
+}
+.mianbox-box4 {@include module-dflex(row,center,center);
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box4icobox1 {@include module-dflex(row,center,center);
+  width: 50%;
+}
+.mianbox-box4icobox1text {
+  margin: 4rem;
+  font-size: 1.3rem;
+  color: #9E9E9E;
+}
+.mianbox-box4icobox2 {@include module-dflex(column,center,center);
+  width: 50%;
+}
+.mianbox-box4icoboxbox {@include module-dflex(row,space-between,center);
+  padding: 1rem 0;
+  width: 100%;
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box4icoboxboxtext {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+.mianbox-box5 {@include module-dflex(row,flex-start,center);
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box5text1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mianbox-box5text2 {
+  margin: 1rem -1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
+.mianbox-box6 {@include module-dflex(row,flex-start,center);
+  border: 0.05rem solid #ddd;
+}
+.mianbox-box6text {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #9E9E9E;
+}

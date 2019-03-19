@@ -1,0 +1,23 @@
+@charset "utf-8";
+@mixin module-dflex($row,$center,$items) {
+  display: flex;
+  flex-direction: $row;
+  justify-content: $center;
+  align-items: $items;
+}
+
+@mixin module-imgscale($width,$height,$margin,$image,$position,$scale) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  background-image: $image;
+  background-position: $position;
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+}
+
+//@include module-dflex(row,center,center);
+//@include module-imgscale(,,,,,);

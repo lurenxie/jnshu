@@ -1,0 +1,225 @@
+@charset "utf-8";
+@import "reset";
+@import "element";
+
+.headico1 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-29px 0,0.7);}
+.headico2 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-55px 0,0.7);}
+.headico3 {@include module-imgscale(25px,27px,0,url(../images/img1.png),-82px 0,0.7);}
+.footer-ico {@include module-imgscale(92px,92px,0,url(../images/img/wximg.png),0 0,1);}
+.main-ico {@include module-imgscale(122px,33px,4rem 0 4rem 4rem,url(../images/img2.png),-53px 0,1);}
+
+
+
+body {
+  background-color: #FAFBFA;
+}
+@media (max-width: 767px) {
+  /*在小于768像素的屏幕里,这里的样式才生效*/
+  .ul-box {@include module-dflex(column,center,center);}
+  .li-border {
+    width: 100%;
+    text-align: center;
+  }
+  .a-active {
+    font-size: 1.2rem;
+    color: #fff!important;
+    background-color: #36C388!important;
+  }
+  .footer-box {@include module-dflex(column,center,center);}
+  .footer-box1 {@include module-dflex(row,space-between,flex-start);
+    height: 8rem;
+  }
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box3 {@include module-dflex(column,center,flex-start);}
+  .mianli-box1 {
+    box-shadow: 0 0 2px #ddd;
+  }
+  .main-icobox {@include module-dflex(column,center,center);
+    box-shadow: 0 0 2px #ddd;
+    background-color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  /*在大于768像素的屏幕里,这里的样式才生效*/
+  .ul-box {
+    margin: 0 10rem 0 0;
+  }
+  .li-box {
+    float: right;
+  }
+  .li-border {
+  }
+  .heatuijian {
+    border-bottom: 0.3rem solid #fff!important;
+  }
+  .a-active {
+    font-size: 1.2rem;
+    color: #fff!important;
+    background-color: #20B176!important;
+  }
+  .footer-box {@include module-dflex(column,center,center);}
+  .footer-box1 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+  .footer-box3 {@include module-dflex(column,center,flex-start);}
+  .main-navbox {
+    padding: 0;
+    box-shadow: 0 0 2px #ddd;
+  }
+  .mianli-box1 {
+    box-shadow: 0 0 2px #ddd;
+  }
+  .mian-navul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .main-icobox {@include module-dflex(column,center,center);
+    box-shadow: 0 0 2px #ddd;
+    background-color: #fff;
+  }
+}
+@media (min-width: 992px) {
+  /*在大于992像素的屏幕里,这里的样式才生效*/
+  .footer-box {@include module-dflex(row,center,center);}
+  .footer-box1 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+  .footer-box2 {@include module-dflex(column,space-between,flex-start);
+    height: 8rem;
+  }
+  .footer-box3 {@include module-dflex(column,center,flex-end);}
+  .main-navbox {
+    width: 25%;
+    padding: 0;
+    box-shadow: 0 0 2px #ddd;
+  }
+  .mianli-box1 {
+    box-shadow: 0 0 2px #ddd;
+  }
+  .mian-navul {@include module-dflex(column,center,baseline);
+    padding: 0;
+    list-style-type: none;
+  }
+  .maintext-box {
+    margin: 0 0 0 5%;
+    width: 70%;
+  }
+  .main-icobox {@include module-dflex(row,center,center);
+    box-shadow: 0 0 2px #ddd;
+    background-color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+header {@include module-dflex(row,space-around,center);
+  font-size: 1.1rem;
+  color: #20B176;
+}
+.headico-box {@include module-dflex(row,center,center);}
+.nav-style {
+  background-color: #20B176;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.a-style {
+  background-color: #20B176!important;
+  color: #fff!important;
+  font-size: 1.2rem;
+}
+footer {
+  background-color: #20B176;
+}
+.footer-box4 {@include module-dflex(row,center,center);
+  border-top: 0.2rem solid #9E9E9E;
+}
+.footer-text1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer-text2 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.footer-margin {
+  margin: 1rem 0;
+}
+.footer-style1 {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  border-left: 0.1rem solid #fff;
+  border-right: 0.1rem solid #fff;
+}
+.footer-style2 {
+  margin: 0 2rem 0 0;
+}
+.footer-text3 {
+  font-size: 1rem;
+  color: #fff;
+}
+.main-text-text {
+  margin: 1rem 0;
+}
+.main-text-text1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.main-text-text2 {
+  font-size: 1.4rem;
+  color: #20B176;
+}
+.mianli-box {@include module-dflex(row,center,center);
+  padding: 1rem 0;
+  margin: 0 0 1rem 0;
+}
+.li-circle {
+  width: 8px;
+  height: 8px;
+  margin: 0.5rem;
+  background: #fff;
+  border: 1.5px #e6e6e6 solid;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.main-ultext1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.main-icotext {
+  color: #20B176;
+}
+.maintext-box {
+  padding: 0;
+}
+.maintext-textbox1 {
+  width: 45rem;
+  padding: 2rem 0;
+  margin: 0 4rem 0 2rem;
+}
+.maintext-textbox2 {
+  margin: 0;
+  box-shadow: 0 0 2px #ddd;
+  background-color: #fff;
+}
+.maintext-textbox21 {
+  padding: 2rem 0;
+  margin: 0 4rem;
+}
+.maintext-text1 {
+  font-size: 1.4rem;
+  color: #9E9E9E;
+}

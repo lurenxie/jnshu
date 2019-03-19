@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "reset";
+
+.oneone {
+  width: 100%;
+  overflow: hidden;
+}
+.one {
+  float: left;
+  height: 30vw;
+  width: 30vw;
+  margin: 1.3vw;
+  background: #FF9900;
+  border-radius: 10%;
+}
+.footer-btn {
+  width: 90%;
+  height: 4rem;
+  margin: 0.5rem 5%;
+  border: 0.1rem solid #FF9900;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: #FF9900;
+  background-color: #fff;
+}
