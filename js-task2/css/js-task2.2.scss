@@ -1,0 +1,177 @@
+@import "reset";
+@import "module";
+
+
+.heaimg1 {@include  module-ico(25px,41px,0,url(../images/img3.png),0 -14px,0.5)};
+.heaimg2 {@include  module-ico(47px,47px,0,url(../images/img3.png),0 -111px,0.5)};
+.mainimg1 {@include  module-ico(14px,14px,0 0 0 4.5px,url(../images/img3.png),0 0px,0.5)};
+.mainimg2 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -55px,0.5)};
+.mainimg3 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -83px,0.5)};
+//.mainimg4 {@include  module-ico(60px,36px,0px,url(../images/img3.png),0 -158px,0.5)};
+
+
+
+
+body {
+  @include module-flex(column,space-between,center);
+  background: #F0F0F0;
+}
+header {
+  width: 100%;
+  height: 4.4rem;
+  @include module-flex(row,space-between,center);
+  background: #29bde0;
+  span {
+    font-size: 1.7rem;
+    color: #fff;
+  }
+}
+main {
+  width: 94%;
+  @include module-flex(column,center,center);
+  .mainbox1 {
+    @include module-flex(row, center, center);
+    width: 100%;
+    margin: 1rem 0 0 0;
+    background-color: #fff;
+    .mainbox1-box1 {
+      @include module-flex(column, center, center);
+      width: 20%;
+      height: 22.6rem;
+      border-right: 0.1rem solid #d9d9d9;
+      span {
+        display: block;
+        font-size: 1.8rem;
+        color: #444;
+      }
+    }
+    .mainbox1-box2 {
+      @include module-flex(column, center, center);
+      width: 80%;
+      height: 22.6rem;
+      background-color: #fbfbfb;
+      .mainbox1-box2box1 {
+        @include module-flex(row, center, center);
+        ul {
+          width: 50%;
+          height: 19.5rem;
+          border-bottom: 0.1rem solid #d9d9d9;
+          li {
+            position: relative;
+            margin: 2rem;
+            font-size: 1.3rem;
+            color: #a1a1a1;
+          }
+          li:before {
+            position: absolute;
+            left: -1.8rem;
+            top: 0.67rem;
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #fab344;
+          }
+        }
+      }
+      .mainbox1-box2box2 {
+        @include module-flex(row, center, center);
+        width: 100%;
+        height: 3rem;
+        span {
+          font-size: 1.4rem;
+          color: #29bde0;
+        }
+      }
+    }
+  }
+  .mainbox2 {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    background-color: #fff;
+    .mainbox2box1 {
+      @include module-flex(row, center, center);
+      width: 100%;
+      height: 5.5rem;
+      input {
+        width: 90%;
+        padding: 0 0 1rem 0.1rem;
+        border-bottom: 0.1rem solid #f0f0f0;
+        font-size: 1.4rem;
+        color: #d7d7d7;
+      }
+    }
+    .mainbox2box2 {
+      @include module-flex(row,center,center);
+      width: 100%;
+      height: 5.5rem;
+      margin-top: -1.5rem;
+      input {
+        width: 90%;
+        padding: 0 0 1rem 0.1rem;
+        border-bottom: 0.1rem solid #f0f0f0;
+        font-size: 1.4rem;
+        color: #d7d7d7;
+      }
+    }
+  }
+  .mainbox3 {
+    width: 100%;
+    height: 9.5rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    .mainbox3box1 {
+      @include module-flex(row,flex-start,center);
+      margin: 1rem 0 0 1.6rem;
+      input {
+        @include module-flex(row,center ,center);
+        width: 3rem;
+        margin: 0 1rem 0 1.4rem;
+        background-color: #f4f5f5;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #fab344;
+      }
+      span {
+        display: block;
+        font-size: 1.4rem;
+        color: #444;
+      }
+    }
+    .mainbox3box2 {
+      @include module-flex(row,center ,center);
+      .mainbox3box2box2 {
+        width: 17rem;
+        height: 0.2rem;
+        background-color: #ffe6be;
+        .mainbox3box2box2ico {
+          width: 1rem;
+          height: 0.2rem;
+          background-color: #fcc671;
+          img {
+            width: 30px;
+            height: 18px;
+            margin: -1.9rem 0 0 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 94%;
+  height: 4.4rem;
+  margin-top: 1rem;
+  background-color: #fab344;
+  button {
+    width: 100%;
+    height: 100%;
+    background-color: #fab344;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+
+
+
+

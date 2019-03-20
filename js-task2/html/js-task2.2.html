@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link href="../css/js-task2.2.css" type="text/css" rel="stylesheet"/>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ondragstart="return false;">
+<header>
+    <div class="heaimg1" onclick="backPage()"></div>
+    <div><span>参数设置</span></div>
+    <div class="heaimg2"></div>
+</header>
+<main>
+    <div class="mainbox1">
+        <div class="mainbox1-box1">
+            <span>玩</span>
+            <span>家</span>
+            <span>配</span>
+            <span>比</span>
+        </div>
+        <div class="mainbox1-box2">
+            <div class="mainbox1-box2box1">
+                <ul>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                    <li>
+                        <span>杀&nbsp;&nbsp;手&nbsp;1&nbsp;人</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mainbox1-box2box2">
+                <span>点击设置</span>
+                <div class="mainimg1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbox2">
+        <div class="mainbox2box1"><input type="text" value="水民词组"></div>
+        <div class="mainbox2box2"><input type="text" value="幽灵词组"></div>
+    </div>
+    <div class="mainbox3">
+        <div class="mainbox3box1">
+            <span>玩家人数</span>
+            <input id="numberinput" type="text" onchange="changeValue()" value="4">
+            <span>人</span>
+        </div>
+        <div class="mainbox3box2">
+            <div class="mainbox3box2box1 mainimg2" onclick="changeWidthLeft()"></div>
+            <div class="mainbox3box2box2">
+                <div class="mainbox3box2box2ico" id="changeicowidth">
+                    <img id="changeicomargin" src="../images/img4.png" alt="">
+                </div>
+            </div>
+            <div class="mainbox3box2box3 mainimg3" onclick="changeWidthRight()"></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <button onclick="submitNumber()"><span>去发牌</span></button>
+</footer>
+</body>
+<!-- 自定义 JavaScript 文件 -->
+<script src="../js/js-task2.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+

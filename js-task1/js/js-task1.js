@@ -1,9 +1,6 @@
 var changeVar1 = null;
 var changeVar2 = null;
 var changeVar3 = null;
-
-
-
 function getColot() {
     var r=Math.floor(Math.random()*256);
     var g=Math.floor(Math.random()*256);
@@ -11,7 +8,7 @@ function getColot() {
     return "rgb("+r+','+g+','+b+")";//所有方法的拼接都可以用ES6新特性`其他字符串{$变量名}`替换
 }
 function changeColor() {
-    var numberTen =  Math.ceil(Math.random()*1000000000%9);
+    var numberTen =  Math.ceil(Math.random()*9);
     var nodeId = "one" + numberTen;
     var nodeName = document.getElementById(nodeId);
     nodeName.style.background = getColot();
