@@ -156,7 +156,7 @@ main {
         justify-content: center;
         align-items: center; }
         main .mainbox1 .mainbox1-box2 .mainbox1-box2box1 ul {
-          width: 50%;
+          width: 100%;
           height: 19.5rem;
           border-bottom: 0.1rem solid #d9d9d9; }
           main .mainbox1 .mainbox1-box2 .mainbox1-box2box1 ul li {

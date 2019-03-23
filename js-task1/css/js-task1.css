@@ -34,14 +34,18 @@ abbr, acronym {
   border: 0; }
 
 .oneone {
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
+
+.oneone:after {
+  content: '';
+  display: block;
+  clear: both; }
 
 .one {
   float: left;
-  height: 30vw;
-  width: 30vw;
-  margin: 1.3vw;
+  width: 31.33%;
+  margin: 1%;
+  padding-bottom: 31.33%;
   background: #FF9900;
   border-radius: 10%; }
 
