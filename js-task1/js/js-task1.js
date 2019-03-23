@@ -21,8 +21,9 @@ function getColot() {
     var b=Math.floor(Math.random()*256);
     return "rgb("+r+','+g+','+b+")";//所有方法的拼接都可以用ES6新特性`其他字符串{$变量名}`替换
 }
-//随机改变三个方块颜色
+//利用随机数函数随机改变三个方块颜色
 function runChangecolor() {
+    recoverColor();
     var radonmArray = getRandomArray(nineArray, 3);
     // alert(radonmArray);
     getboxelement[radonmArray[0]].style.backgroundColor = getColot();
@@ -39,7 +40,7 @@ function recoverColor() {
 document.getElementById('footer-btn1').addEventListener('click',function() {
     clearInterval(changeVar);
     recoverColor();
-    changeVar = setInterval("runChangecolor()", 200);
+    changeVar = setInterval("runChangecolor()", 1000);
 });
 //给id为footer-btn2的dom节点添加按键事件句柄，使鼠标按下该节点时执行匿名函数
 document.getElementById('footer-btn2').addEventListener('click',function () {
