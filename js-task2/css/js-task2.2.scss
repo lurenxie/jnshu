@@ -17,7 +17,8 @@ header {
   span {
     font-size: 1.7rem;
     color: #fff;
-} }
+  }
+}
 main {
   width: 94%;
   @include module-flex(column,center,center);
@@ -35,7 +36,8 @@ main {
         display: block;
         font-size: 1.8rem;
         color: #444;
-    } }
+      }
+    }
     .mainbox1-box2 {
       @include module-flex(column, center, center);
       width: 80%;
@@ -61,7 +63,9 @@ main {
             width: 0.5rem;
             height: 0.5rem;
             background-color: #fab344;
-      } } }
+          }
+        }
+      }
       .mainbox1-box2box2 {
         @include module-flex(row, center, center);
         width: 100%;
@@ -69,7 +73,10 @@ main {
         span {
           font-size: 1.4rem;
           color: #29bde0;
-  } } } }
+        }
+      }
+    }
+  }
   .mainbox2 {
     width: 100%;
     margin: 0.5rem 0 0 0;
@@ -84,7 +91,8 @@ main {
         border-bottom: 0.1rem solid #f0f0f0;
         font-size: 1.4rem;
         color: #d7d7d7;
-    } }
+      }
+    }
     .mainbox2box2 {
       @include module-flex(row,center,center);
       width: 100%;
@@ -96,7 +104,9 @@ main {
         border-bottom: 0.1rem solid #f0f0f0;
         font-size: 1.4rem;
         color: #d7d7d7;
-  } } }
+      }
+    }
+  }
   .mainbox3 {
     width: 100%;
     height: 9.5rem;
@@ -118,7 +128,8 @@ main {
         display: block;
         font-size: 1.4rem;
         color: #444;
-    } }
+      }
+    }
     .mainbox3box2 {
       @include module-flex(row,center ,center);
       .mainbox3box2box2 {
@@ -132,7 +143,11 @@ main {
         //拖动块的样式
         input[type=range]::-webkit-slider-thumb {
           @include  module-ico(30px,18px,0px,url(../images/img4.1.png),0 0,1);
-} } } } }
+        }
+      }
+    }
+  }
+}
 footer {
   width: 94%;
   height: 4.4rem;
@@ -144,7 +159,8 @@ footer {
     background-color: #fab344;
     font-size: 2rem;
     color: #fff;
-} }
+  }
+}
 
 
 

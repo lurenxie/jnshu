@@ -19,7 +19,7 @@ function changeAll(i) {
     getInputText.value = i;
     //滑块位置
     getInputRange.value = i;
-    //滑块背景
+    //滑块背景位置
     var n = Number(((i-3.5)/15)*100).toFixed(0) + "%";
     getInputRange.style.backgroundSize = n + ' ' + '100%';
     //玩家配比
@@ -51,9 +51,20 @@ getBtnAdd.addEventListener('click', function() {
     if (i <= 4) {return;}
     changeAll(Number(i) - 1);
 });
-//click右加按钮
+// click右加按钮
 getBtnMin.addEventListener('click', function() {
     var i = getInputText.value;
     if (i >= 18) {return;}
     changeAll(Number(i) + 1);
 });
+//这里是一个bug，具体描述可以见坑乎和日报
+// getBtnMin.addEventListener('click', function() {
+//     var i = getInputText.value;
+//     //玩家人数input
+//     getInputText.value = Number(i) + 1;
+//     //滑块位置
+//     getInputRange.value = Number(i) + 1;
+//     //滑块背景位置
+//     var n = Number(((i-3.5)/15)*100).toFixed(0) + "%";
+//     getInputRange.style.backgroundSize = n + ' ' + '100%';
+// });
