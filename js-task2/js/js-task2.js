@@ -1,137 +1,59 @@
-var inputNumber = 4;
+var getInputText = document.getElementById("mainbox3box1input");
+var getInputRange = document.getElementById("mainbox3box2box2input");
+var getBtnAdd = document.getElementById("mainbox3box2box1");
+var getBtnMin = document.getElementById("mainbox3box2box3");
+var getSpanSum = document.getElementById("mainbox1-box2box1span1");
+var getSpanKill = document.getElementById("mainbox1-box2box1span2");
+var getSpanPeo = document.getElementById("mainbox1-box2box1span3");
 
-
-var mainbox3input = document.getElementById("numberinput");
-var mainbox3icoWidth = document.getElementById("changeicowidth");
-var mainbox3icomargin = document.getElementById("changeicomargin");
-
-
+//页面跳转
 function changePage() {
     window.location.href = "../html/js-task2.2.html";
 }
 function backPage() {
     window.location.href = "../html/js-task2.html";
 }
-//input表单输入后执行函数
-function changeValue() {
-    inputNumber = mainbox3input.value;
-    if (inputNumber < 4 || inputNumber > 18) {
-        mainbox3input.value = 4;
+//根据输入值同时改变玩家配比、玩家人数和滑块以及背景色位置
+function changeAll(i) {
+    //玩家人数input
+    getInputText.value = i;
+    //滑块位置
+    getInputRange.value = i;
+    //滑块背景
+    var n = Number(((i-3.5)/15)*100).toFixed(0) + "%";
+    getInputRange.style.backgroundSize = n + ' ' + '100%';
+    //玩家配比
+    var m = Math.floor(Number(i)/4);
+    getSpanSum.innerText = Number(i);
+    getSpanKill.innerText = m;
+    getSpanPeo.innerText = Number(i) - m;
+}
+//change人数输入框
+getInputText.addEventListener('change', function() {
+    var i = getInputText.value;
+    if (i < 4 || i > 18) {
         alert("输入值必须为4~18之间数字");
-        mainbox3icoWidth.style.width = 10 + 'px';
-        mainbox3icomargin.style.marginLeft = 0;
+        getInputText.value = 4;
+        getInputRange.value = 4;
+        getInputRange.style.backgroundSize = '0 100%';
         return(false);
     }
-    alert(inputNumber);
-    inputNumber -= 4;
-    mainbox3icoWidth.style.width = inputNumber * 10 + 15 + 'px';
-    mainbox3icomargin.style.marginLeft = inputNumber * 10 + 'px';
-}
-//点击减号按钮后执行函数
-function changeWidthLeft() {
-    var box = mainbox3icoWidth;
-    var ico = mainbox3icomargin;
-    var icoWidth = window.getComputedStyle(box).width;
-    var icoMargin = window.getComputedStyle(ico).marginLeft;
-    if (parseInt(icoMargin) <= 0) {
-        return(false);
-    }
-    // alert(icoWidth);
-    icoWidth = parseInt(icoWidth) - 10 + "px";
-    icoMargin = parseInt(icoMargin) - 10 + "px";
-    mainbox3icoWidth.style.width = icoWidth;
-    mainbox3icomargin.style.marginLeft = icoMargin;
-    inputNumber -= 1;
-    mainbox3input.value = inputNumber;
-}
-//点击加号按钮后执行函数
-function changeWidthRight() {
-    var box = mainbox3icoWidth;
-    var ico = mainbox3icomargin;
-    var icoWidth = window.getComputedStyle(box).width;
-    var icoMargin = window.getComputedStyle(ico).marginLeft;
-    if (parseInt(icoMargin) >= 140) {
-        return(false);
-    }
-    // alert(icoWidth);
-    icoWidth = parseInt(icoWidth) + 10 + "px";
-    icoMargin = parseInt(icoMargin) + 10 + "px";
-    mainbox3icoWidth.style.width = icoWidth;
-    mainbox3icomargin.style.marginLeft = icoMargin;
-    inputNumber += 1;
-    mainbox3input.value = inputNumber;
-}
-//拖动进度条执行函数
-mainbox3icomargin.onmousedown = function(event) {
-    var event = event || window.event;
-    var mousedefaultx = event.clientX;
-    mousedefaultx = parseInt(mousedefaultx);
-    mainbox3icomargin.onmousemove = function(event) {
-        var event = event || window.event;
-        var mouseValuex = event.clientX;
-        var box = mainbox3icoWidth;
-        var ico = mainbox3icomargin;
-        var icoWidth = window.getComputedStyle(box).width;
-        var icoMargin = window.getComputedStyle(ico).marginLeft;
-        mouseValuex = parseInt(mouseValuex);
-        if (mouseValuex - mousedefaultx >= 10) {
-            mousedefaultx = mouseValuex;
-            icoWidth = parseInt(icoWidth) + 10 + "px";
-            icoMargin = parseInt(icoMargin) + 10 + "px";
-            mainbox3icoWidth.style.width = icoWidth;
-            mainbox3icomargin.style.marginLeft = icoMargin;
-            inputNumber += 1;
-            mainbox3input.value = inputNumber;
-        }
-        else if (mouseValuex - mousedefaultx <= -10) {
-            mousedefaultx = mouseValuex;
-            icoWidth = parseInt(icoWidth) - 10 + "px";
-            icoMargin = parseInt(icoMargin) - 10 + "px";
-            mainbox3icoWidth.style.width = icoWidth;
-            mainbox3icomargin.style.marginLeft = icoMargin;
-            inputNumber -= 1;
-            mainbox3input.value = inputNumber;
-        }
-        // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
-    };
-};
-document.onmouseup = function() {
-    mainbox3icomargin.onmousemove = null;
-};
-//拖动进度条执行函数(移动端适应)
-mainbox3icomargin.touchStart = function(event) {
-    var event = event || window.event;
-    var mousedefaultx = event.clientX;
-    mousedefaultx = parseInt(mousedefaultx);
-    mainbox3icomargin.touchmove = function(event) {
-        var event = event || window.event;
-        var mouseValuex = event.clientX;
-        var box = mainbox3icoWidth;
-        var ico = mainbox3icomargin;
-        var icoWidth = window.getComputedStyle(box).width;
-        var icoMargin = window.getComputedStyle(ico).marginLeft;
-        mouseValuex = parseInt(mouseValuex);
-        if (mouseValuex - mousedefaultx >= 10) {
-            mousedefaultx = mouseValuex;
-            icoWidth = parseInt(icoWidth) + 10 + "px";
-            icoMargin = parseInt(icoMargin) + 10 + "px";
-            mainbox3icoWidth.style.width = icoWidth;
-            mainbox3icomargin.style.marginLeft = icoMargin;
-            inputNumber += 1;
-            mainbox3input.value = inputNumber;
-        }
-        else if (mouseValuex - mousedefaultx <= -10) {
-            mousedefaultx = mouseValuex;
-            icoWidth = parseInt(icoWidth) - 10 + "px";
-            icoMargin = parseInt(icoMargin) - 10 + "px";
-            mainbox3icoWidth.style.width = icoWidth;
-            mainbox3icomargin.style.marginLeft = icoMargin;
-            inputNumber -= 1;
-            mainbox3input.value = inputNumber;
-        }
-        // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
-    };
-};
-document.touchend = function() {
-    mainbox3icomargin.touchmove = null;
-};
+    changeAll(i);
+});
+//MouseMove滑块
+getInputRange.addEventListener('mousemove', function() {
+    var i = getInputRange.value;
+    changeAll(i);
+});
+//click左减按钮
+getBtnAdd.addEventListener('click', function() {
+    var i = getInputText.value;
+    if (i <= 4) {return;}
+    changeAll(Number(i) - 1);
+});
+//click右加按钮
+getBtnMin.addEventListener('click', function() {
+    var i = getInputText.value;
+    if (i >= 18) {return;}
+    changeAll(Number(i) + 1);
+});

@@ -33,9 +33,16 @@ q:before, q:after {
 abbr, acronym {
   border: 0; }
 
-button, input {
+button, input[type=text] {
   outline: none;
   border: 0; }
+
+input[type=range] {
+  outline: none;
+  -webkit-appearance: none; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; }
 
 .s-heaimg {
   width: 34px;

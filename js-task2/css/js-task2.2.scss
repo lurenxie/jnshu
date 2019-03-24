@@ -1,17 +1,10 @@
 @import "reset";
 @import "module";
-
-
 .heaimg1 {@include  module-ico(25px,41px,0,url(../images/img3.png),0 -14px,0.5)};
 .heaimg2 {@include  module-ico(47px,47px,0,url(../images/img3.png),0 -111px,0.5)};
 .mainimg1 {@include  module-ico(14px,14px,0 0 0 4.5px,url(../images/img3.png),0 0px,0.5)};
 .mainimg2 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -55px,0.5)};
 .mainimg3 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -83px,0.5)};
-//.mainimg4 {@include  module-ico(60px,36px,0px,url(../images/img3.png),0 -158px,0.5)};
-
-
-
-
 body {
   @include module-flex(column,space-between,center);
   background: #F0F0F0;
@@ -24,8 +17,7 @@ header {
   span {
     font-size: 1.7rem;
     color: #fff;
-  }
-}
+} }
 main {
   width: 94%;
   @include module-flex(column,center,center);
@@ -43,8 +35,7 @@ main {
         display: block;
         font-size: 1.8rem;
         color: #444;
-      }
-    }
+    } }
     .mainbox1-box2 {
       @include module-flex(column, center, center);
       width: 80%;
@@ -58,7 +49,7 @@ main {
           border-bottom: 0.1rem solid #d9d9d9;
           li {
             position: relative;
-            margin: 2rem;
+            margin: 4rem;
             font-size: 1.3rem;
             color: #a1a1a1;
           }
@@ -70,9 +61,7 @@ main {
             width: 0.5rem;
             height: 0.5rem;
             background-color: #fab344;
-          }
-        }
-      }
+      } } }
       .mainbox1-box2box2 {
         @include module-flex(row, center, center);
         width: 100%;
@@ -80,10 +69,7 @@ main {
         span {
           font-size: 1.4rem;
           color: #29bde0;
-        }
-      }
-    }
-  }
+  } } } }
   .mainbox2 {
     width: 100%;
     margin: 0.5rem 0 0 0;
@@ -98,8 +84,7 @@ main {
         border-bottom: 0.1rem solid #f0f0f0;
         font-size: 1.4rem;
         color: #d7d7d7;
-      }
-    }
+    } }
     .mainbox2box2 {
       @include module-flex(row,center,center);
       width: 100%;
@@ -111,9 +96,7 @@ main {
         border-bottom: 0.1rem solid #f0f0f0;
         font-size: 1.4rem;
         color: #d7d7d7;
-      }
-    }
-  }
+  } } }
   .mainbox3 {
     width: 100%;
     height: 9.5rem;
@@ -135,28 +118,21 @@ main {
         display: block;
         font-size: 1.4rem;
         color: #444;
-      }
-    }
+    } }
     .mainbox3box2 {
       @include module-flex(row,center ,center);
       .mainbox3box2box2 {
-        width: 17rem;
-        height: 0.2rem;
-        background-color: #ffe6be;
-        .mainbox3box2box2ico {
-          width: 1rem;
+        width: 50%;
+        input[type = range] {
+          width: 100%;
           height: 0.2rem;
-          background-color: #fcc671;
-          img {
-            width: 30px;
-            height: 18px;
-            margin: -1.9rem 0 0 0rem;
-          }
+          background: -webkit-linear-gradient(left, #fab344, #fab344) no-repeat, #ffe6be;
+          background-size: 0 100%;
         }
-      }
-    }
-  }
-}
+        //拖动块的样式
+        input[type=range]::-webkit-slider-thumb {
+          @include  module-ico(30px,18px,0px,url(../images/img4.1.png),0 0,1);
+} } } } }
 footer {
   width: 94%;
   height: 4.4rem;
@@ -168,8 +144,7 @@ footer {
     background-color: #fab344;
     font-size: 2rem;
     color: #fff;
-  }
-}
+} }
 
 
 

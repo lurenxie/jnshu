@@ -31,18 +31,18 @@
             <div class="mainbox1-box2box1">
                 <ul>
                     <li>
-                        <span>总共</span>
-                        <span></span>
+                        <span>总&ensp;&ensp;共</span>
+                        <span id="mainbox1-box2box1span1">4</span>
                         <span>人</span>
                     </li>
                     <li>
-                        <span>杀手</span>
-                        <span></span>
+                        <span>杀&ensp;&ensp;手</span>
+                        <span id="mainbox1-box2box1span2">1</span>
                         <span>人</span>
                     </li>
                     <li>
-                        <span>水民</span>
-                        <span></span>
+                        <span>水&ensp;&ensp;民</span>
+                        <span id="mainbox1-box2box1span3">3</span>
                         <span>人</span>
                     </li>
                 </ul>
@@ -60,22 +60,18 @@
     <div class="mainbox3">
         <div class="mainbox3box1">
             <span>玩家人数</span>
-            <input id="numberinput" type="text" onchange="changeValue()" value="4">
+            <input id="mainbox3box1input" type="text" value="4">
             <span>人</span>
         </div>
         <div class="mainbox3box2">
-            <div class="mainbox3box2box1 mainimg2" onclick="changeWidthLeft()"></div>
-            <div class="mainbox3box2box2">
-                <div class="mainbox3box2box2ico" id="changeicowidth">
-                    <img id="changeicomargin" src="../images/img4.png" alt="">
-                </div>
-            </div>
-            <div class="mainbox3box2box3 mainimg3" onclick="changeWidthRight()"></div>
+            <div id="mainbox3box2box1" class="mainimg2"></div>
+            <div class="mainbox3box2box2"><input id="mainbox3box2box2input" class="maining4" type="range" min="4" max="18" step="1" value ="4"></div>
+            <div id="mainbox3box2box3" class="mainimg3"></div>
         </div>
     </div>
 </main>
 <footer>
-    <button onclick="submitNumber()"><span>去发牌</span></button>
+    <button><span>去发牌</span></button>
 </footer>
 </body>
 <!-- 自定义 JavaScript 文件 -->
