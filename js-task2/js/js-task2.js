@@ -45,6 +45,10 @@ getInputRange.addEventListener('change', function() {
     var i = getInputRange.value;
     changeAll(i);
 });
+getInputRange.addEventListener('mousemove', function() {
+    var i = getInputRange.value;
+    changeAll(i);
+});
 //click左减按钮
 getBtnAdd.addEventListener('click', function() {
     var i = getInputText.value;
