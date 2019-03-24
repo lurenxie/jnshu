@@ -41,7 +41,7 @@ getInputText.addEventListener('change', function() {
     changeAll(i);
 });
 //MouseMove滑块
-getInputRange.addEventListener('mousemove', function() {
+getInputRange.addEventListener('change', function() {
     var i = getInputRange.value;
     changeAll(i);
 });
