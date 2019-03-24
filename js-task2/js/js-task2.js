@@ -98,3 +98,40 @@ mainbox3icomargin.onmousedown = function(event) {
 document.onmouseup = function() {
     mainbox3icomargin.onmousemove = null;
 };
+//拖动进度条执行函数(移动端适应)
+mainbox3icomargin.touchStart = function(event) {
+    var event = event || window.event;
+    var mousedefaultx = event.clientX;
+    mousedefaultx = parseInt(mousedefaultx);
+    mainbox3icomargin.touchmove = function(event) {
+        var event = event || window.event;
+        var mouseValuex = event.clientX;
+        var box = mainbox3icoWidth;
+        var ico = mainbox3icomargin;
+        var icoWidth = window.getComputedStyle(box).width;
+        var icoMargin = window.getComputedStyle(ico).marginLeft;
+        mouseValuex = parseInt(mouseValuex);
+        if (mouseValuex - mousedefaultx >= 10) {
+            mousedefaultx = mouseValuex;
+            icoWidth = parseInt(icoWidth) + 10 + "px";
+            icoMargin = parseInt(icoMargin) + 10 + "px";
+            mainbox3icoWidth.style.width = icoWidth;
+            mainbox3icomargin.style.marginLeft = icoMargin;
+            inputNumber += 1;
+            mainbox3input.value = inputNumber;
+        }
+        else if (mouseValuex - mousedefaultx <= -10) {
+            mousedefaultx = mouseValuex;
+            icoWidth = parseInt(icoWidth) - 10 + "px";
+            icoMargin = parseInt(icoMargin) - 10 + "px";
+            mainbox3icoWidth.style.width = icoWidth;
+            mainbox3icomargin.style.marginLeft = icoMargin;
+            inputNumber -= 1;
+            mainbox3input.value = inputNumber;
+        }
+        // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+    };
+};
+document.touchend = function() {
+    mainbox3icomargin.touchmove = null;
+};
