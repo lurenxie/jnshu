@@ -62,47 +62,39 @@ function changeWidthRight() {
     mainbox3input.value = inputNumber;
 }
 //拖动进度条执行函数
-// mainbox3icomargin.onmousedown = function(event) {
-//     var event = event || window.event;
-//     var mousedefaultx = event.clientX;
-//     mousedefaultx = parseInt(mousedefaultx);
-//     mainbox3icomargin.onmousemove = function(event) {
-//         var event = event || window.event;
-//         var mouseValuex = event.clientX;
-//         var box = mainbox3icoWidth;
-//         var ico = mainbox3icomargin;
-//         var icoWidth = window.getComputedStyle(box).width;
-//         var icoMargin = window.getComputedStyle(ico).marginLeft;
-//         mouseValuex = parseInt(mouseValuex);
-//         if (mouseValuex - mousedefaultx >= 10) {
-//             mousedefaultx = mouseValuex;
-//             icoWidth = parseInt(icoWidth) + 10 + "px";
-//             icoMargin = parseInt(icoMargin) + 10 + "px";
-//             mainbox3icoWidth.style.width = icoWidth;
-//             mainbox3icomargin.style.marginLeft = icoMargin;
-//             inputNumber += 1;
-//             mainbox3input.value = inputNumber;
-//         }
-//         else if (mouseValuex - mousedefaultx <= -10) {
-//             mousedefaultx = mouseValuex;
-//             icoWidth = parseInt(icoWidth) - 10 + "px";
-//             icoMargin = parseInt(icoMargin) - 10 + "px";
-//             mainbox3icoWidth.style.width = icoWidth;
-//             mainbox3icomargin.style.marginLeft = icoMargin;
-//             inputNumber -= 1;
-//             mainbox3input.value = inputNumber;
-//         }
-//         // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
-//
-//     };
-//     // document.onmouseup = function() {
-//     //     document.onmousedown = null;
-//     // }
-// };
-// document.onmouseup = function() {
-//     console.log(1)
-//     document.onmousemove = null;
-// }
-// document.onmouseup = function() {
-//     mainbox3icomargin.onmousedown = null;
-// }
+mainbox3icomargin.onmousedown = function(event) {
+    var event = event || window.event;
+    var mousedefaultx = event.clientX;
+    mousedefaultx = parseInt(mousedefaultx);
+    mainbox3icomargin.onmousemove = function(event) {
+        var event = event || window.event;
+        var mouseValuex = event.clientX;
+        var box = mainbox3icoWidth;
+        var ico = mainbox3icomargin;
+        var icoWidth = window.getComputedStyle(box).width;
+        var icoMargin = window.getComputedStyle(ico).marginLeft;
+        mouseValuex = parseInt(mouseValuex);
+        if (mouseValuex - mousedefaultx >= 10) {
+            mousedefaultx = mouseValuex;
+            icoWidth = parseInt(icoWidth) + 10 + "px";
+            icoMargin = parseInt(icoMargin) + 10 + "px";
+            mainbox3icoWidth.style.width = icoWidth;
+            mainbox3icomargin.style.marginLeft = icoMargin;
+            inputNumber += 1;
+            mainbox3input.value = inputNumber;
+        }
+        else if (mouseValuex - mousedefaultx <= -10) {
+            mousedefaultx = mouseValuex;
+            icoWidth = parseInt(icoWidth) - 10 + "px";
+            icoMargin = parseInt(icoMargin) - 10 + "px";
+            mainbox3icoWidth.style.width = icoWidth;
+            mainbox3icomargin.style.marginLeft = icoMargin;
+            inputNumber -= 1;
+            mainbox3input.value = inputNumber;
+        }
+        // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+    };
+};
+document.onmouseup = function() {
+    mainbox3icomargin.onmousemove = null;
+};
