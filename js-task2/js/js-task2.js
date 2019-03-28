@@ -5,13 +5,23 @@ var getBtnMin = document.getElementById("mainbox3box2box3");
 var getSpanSum = document.getElementById("mainbox1-box2box1span1");
 var getSpanKill = document.getElementById("mainbox1-box2box1span2");
 var getSpanPeo = document.getElementById("mainbox1-box2box1span3");
-
+var numberOfPeople;
+var numberOfKillPeople;
 //页面跳转
-function changePage() {
+function changePage1() {
     window.location.href = "../html/js-task2.2.html";
 }
-function backPage() {
+function changePage2() {
     window.location.href = "../html/js-task2.html";
+}
+function changePage3() {
+    var i = getInputText.value;
+    changeAll(i);
+    sessionStorage.setItem("numberOfPeople",numberOfPeople);
+    sessionStorage.setItem("numberOfKillPeople",numberOfKillPeople);
+    // alert(numberOfPeople);
+    // alert(numberOfKillPeople);
+    window.location.href = "../../js-task3/html/js-task3.html";
 }
 //根据输入值同时改变玩家配比、玩家人数和滑块以及背景色位置
 function changeAll(i) {
@@ -27,6 +37,8 @@ function changeAll(i) {
     getSpanSum.innerText = Number(i);
     getSpanKill.innerText = m;
     getSpanPeo.innerText = Number(i) - m;
+    numberOfPeople = getInputText.value;
+    numberOfKillPeople = m;
 }
 //change人数输入框
 getInputText.addEventListener('change', function() {

@@ -1,9 +1,7 @@
 @import "reset";
 @import "module";
-
-.s-heaimg {@include module-ico(34px,28px,0 0 4px 2.5px,url(../images/img.png),-54px 0,0.5);}
-.s-mnavimg {@include module-ico(24px,40px,0 1px 0 0,url(../images/img.png),0 0,0.5);}
-
+.s-heaimg {@include module-ico(34px,28px,0 0 4px 2.5px,url(../images/img.png),-150px 0,0.5);}
+.s-mnavimg {@include module-ico(24px,40px,0 1px 0 0,url(../images/img.png),-39px 0,0.5);}
 body {
   background: #F0F0F0;
 }

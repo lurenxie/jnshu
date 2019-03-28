@@ -1,10 +1,10 @@
 @import "reset";
 @import "module";
-.heaimg1 {@include  module-ico(25px,41px,0,url(../images/img3.png),0 -14px,0.5)};
-.heaimg2 {@include  module-ico(47px,47px,0,url(../images/img3.png),0 -111px,0.5)};
-.mainimg1 {@include  module-ico(14px,14px,0 0 0 4.5px,url(../images/img3.png),0 0px,0.5)};
-.mainimg2 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -55px,0.5)};
-.mainimg3 {@include  module-ico(28px,28px,0px,url(../images/img3.png),0 -83px,0.5)};
+.heaimg1 {@include  module-ico(25px,41px,0,url(../images/img.png),-14px 0,0.5)};
+.heaimg2 {@include  module-ico(47px,47px,0,url(../images/img.png),-220px 0,0.5)};
+.mainimg1 {@include  module-ico(14px,14px,0 0 0 4.5px,url(../images/img.png),0 0px,0.5)};
+.mainimg2 {@include  module-ico(28px,28px,0px,url(../images/img.png),-92px 0,0.5)};
+.mainimg3 {@include  module-ico(28px,28px,0px,url(../images/img.png),-64px 0,0.5)};
 body {
   @include module-flex(column,space-between,center);
   background: #F0F0F0;

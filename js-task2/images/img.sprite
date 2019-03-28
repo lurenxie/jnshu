@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" xmlns="CssSprite">
   <SpriteList>
-    <Sprite Path="首页_07.png" LocationX="0" LocationY="0" />
-    <Sprite Path="首页_11.png" LocationX="25" LocationY="0" />
-    <Sprite Path="首页_03.png" LocationX="54" LocationY="0" />
-    <Sprite Path="发言讨论结束，投票_06.png" LocationX="88" LocationY="0" />
-    <Sprite Path="发言讨论结束，投票_03.png" LocationX="124" LocationY="0" />
-    <Sprite Path="结果页_05.png" LocationX="163" LocationY="0" />
-    <Sprite Path="结果页_03.png" LocationX="203" LocationY="0" />
-    <Sprite Path="发言讨论结束，投票_11.png" LocationX="254" LocationY="0" />
-    <Sprite Path="发言讨论结束，投票_15.png" LocationX="306" LocationY="0" />
-    <Sprite Path="结果页_10.png" LocationX="441" LocationY="0" />
+    <Sprite Path="设置页面_11.png" LocationX="0" LocationY="0" />
+    <Sprite Path="设置页面_06.png" LocationX="14" LocationY="0" />
+    <Sprite Path="首页_07.png" LocationX="39" LocationY="0" />
+    <Sprite Path="设置页面_21.png" LocationX="64" LocationY="0" />
+    <Sprite Path="设置页面_18.png" LocationX="92" LocationY="0" />
+    <Sprite Path="img4.1.png" LocationX="120" LocationY="0" />
+    <Sprite Path="首页_03.png" LocationX="150" LocationY="0" />
+    <Sprite Path="发言讨论结束，投票_06.png" LocationX="184" LocationY="0" />
+    <Sprite Path="设置页面_03.png" LocationX="220" LocationY="0" />
   </SpriteList>
 </SpriteFile>
