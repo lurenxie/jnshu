@@ -1,0 +1,110 @@
+@import "reset";
+@import "module";
+.header-ico1{@include module-ico(26px, 21px, 0 0 0 6px, url(../images2/img.png), -116px 0, 1);}
+.header-ico2{@include module-ico(20px, 20px, 0 6px 0 0, url(../images2/img.png), -162px 0, 1);}
+
+header {
+  @include module-flex(row,space-between,center);
+  height: 4.4rem;
+  border-bottom: 0.1rem solid #74d4eb;
+  background-color: #29bde0;
+  span {
+    font-size: 1.7rem;
+    color: #fff;
+  }
+}
+main {
+  margin-bottom: 9rem;
+  .main-wrap1 {
+    @include module-flex(column,center,center);
+    background-color: #29bde0;
+    .main-ico {
+      margin: 1.2rem 0;
+    }
+    .wrap1-text1 {
+      width: 78%;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #ffc865;
+    }
+    .wrap1-text2 {
+      @include module-flex(column,center,flex-start);
+      width: 78%;
+      margin: 3rem 0 1.2rem 0;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+  .main-wrap2 {
+    @include module-flex(column,center,center);
+    background-color: #fff;
+    border-bottom: 0.1rem solid #ddd;
+    .wrap2-box {
+      @include module-flex(column,center,flex-start);
+      width: 78%;
+      .wrap2-text1 {
+        @include module-flex(row,space-between,center);
+        width: 100%;
+        margin: 0.6rem 0 1.4rem 0;
+        .text1-left {
+          font-size: 1.5rem;
+          color: #515151;
+        }
+        .text1-right {
+          font-size: 1rem;
+          color: #c7c7c7;
+        }
+      }
+      .wrap2-text2 {
+        @include module-flex(column,center,center);
+        margin-bottom: 2rem;
+        .text2-top {
+          font-size: 1.3rem;
+          color: #a6a6a6;
+        }
+        .text2-bottom {
+          font-size: 1.3rem;
+          color: #a6a6a6;
+        }
+      }
+    }
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include module-flex(row,center,center);
+  //background-color: #29bde0;
+  background-color: rgba(41,189,224,0.5);
+  font-size: 2rem;
+  color: #fff;
+  .foot-left {
+    width: 42.5%;
+    height: 4.3rem;
+    margin: 1rem 2.5rem 1rem 0;
+    border-radius: 0.5rem;
+    background-color: #f66f6f;
+    text-align: center;
+    line-height: 4.3rem;
+  }
+  .foot-right {
+    width: 42.5%;
+    height: 4.3rem;
+    border-radius: 0.5rem;
+    background-color: #fbb435;
+    text-align: center;
+    line-height: 4.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
