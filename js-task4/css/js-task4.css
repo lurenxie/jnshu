@@ -116,7 +116,7 @@ header {
     font-size: 1.7rem;
     color: #fff; }
 
-main {
+main .main-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,7 +125,7 @@ main {
   margin-top: 1.8rem;
   margin-left: auto;
   margin-right: auto; }
-  main .main-head {
+  main .main-menu .main-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,20 +133,33 @@ main {
     height: 4.3rem;
     border: 0.05rem solid #c9c9c9;
     width: 100%; }
-    main .main-head .mian-left {
+    main .main-menu .main-head .mian-left {
       width: 30px; }
-    main .main-head span {
+    main .main-menu .main-head span {
       font-size: 1.5rem;
       font-weight: bold;
       color: #29bde0; }
-  main .main-content {
+  main .main-menu .menu-notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 1.5rem;
     border: 0.05rem solid #c9c9c9;
     border-top: 0; }
-    main .main-content li {
+    main .main-menu .menu-notice div {
+      font-size: 1.5rem;
+      color: #29bde0; }
+  main .main-menu .main-content {
+    width: 100%;
+    height: 25.2rem;
+    border: 0.05rem solid #c9c9c9;
+    border-top: 0; }
+    main .main-menu .main-content li {
       position: relative;
       padding-top: 1rem; }
-    main .main-content span {
+    main .main-menu .main-content span {
       display: block;
       height: 3.8rem;
       width: 75%;
@@ -156,7 +169,7 @@ main {
       color: #fff;
       text-align: center;
       line-height: 3.8rem; }
-    main .main-content span:before {
+    main .main-menu .main-content span:before {
       content: '';
       position: absolute;
       left: 2rem;
@@ -166,12 +179,11 @@ main {
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
       border-right: 10px solid #24a7c6; }
-    main .main-content ul {
-      height: 22rem;
+    main .main-menu .main-content ul {
       margin-left: 1.8rem;
       padding: 1.5rem 0;
       border-left: 0.1rem solid #c9c9c9; }
-      main .main-content ul .ul-ico-wrap {
+      main .main-menu .main-content ul .ul-ico-wrap {
         display: flex;
         flex-direction: row;
         justify-content: center;

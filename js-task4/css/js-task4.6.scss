@@ -38,10 +38,11 @@ main {
   .main-wrap2 {
     @include module-flex(column,center,center);
     background-color: #fff;
-    border-bottom: 0.1rem solid #ddd;
     .wrap2-box {
       @include module-flex(column,center,flex-start);
-      width: 78%;
+      width: 100%;
+      padding: 0 11%;
+      border-bottom: 0.1rem solid #ddd;
       .wrap2-text1 {
         @include module-flex(row,space-between,center);
         width: 100%;
