@@ -61,7 +61,7 @@ $(document).ready(function () {
     $(".civilPeopleNum").text("水 民：" + civilPeople + "人");
     $(".wrap1-text1").text("本轮游戏共抓出杀手" + killPeople + "人，共经历了" + (dateNumber - 96) + "个白天，在杀人游戏中击败了67%的玩家！");
     //跳转到下个页面
-    $(".foot-box2").click(function () {
+    $(".foot-left").click(function () {
         window.location.href = "../../js-task2/html/js-task2.html";
     });
 
