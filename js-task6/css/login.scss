@@ -1,0 +1,58 @@
+@import "reset";
+@import "module";
+
+body {
+  @include module-flex(column,center,center);
+  background-color: #29bde0;
+  background-image: url(../images/image.jpg);
+  .login {
+    @include module-flex(column,center,center);
+    width: 30rem;
+    margin: 20rem;
+    padding: 2rem;
+    background-color: #d0d3d9;
+    border-radius: 5px;
+    div {
+      @include module-flex(row,center,center);
+      margin: 1rem 0;
+      background-color: #fff;
+      border-radius: 2px;
+      span {
+        font-size: 1.8rem;
+        color: #29bde0;
+        margin: 1rem;
+        border-right: 0.1rem solid #d7d7d7;
+        padding-right: 1rem;
+      }
+    }
+    span {
+      font-size: 1.8rem;
+      color: #29bde0;
+    }
+    input[type = text] {
+      display: block;
+      width: 20rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      color: #000;
+      background-color: #fff;
+    }
+    input[type = password] {
+      display: block;
+      width: 20rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    button
+    {
+      width: 100%;
+      height: 3rem;
+      margin-top: 4rem;
+      background-color: #fab344;
+      font-size: 2rem;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+}

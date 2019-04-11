@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/angular, angular, angular-cookies, angular-file-upload, angular-route-segment, angular-strap, angular-strap.tpl, angular-ui-router, angular2, bootstrap, ocLazyLoad, ocLazyLoad.core, ui-bootstrap, ui-bootstrap-tpls}" />
+  </component>
+</project>

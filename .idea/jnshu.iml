@@ -8,5 +8,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="angular" level="application" />
+    <orderEntry type="library" name="@types/angular" level="application" />
+    <orderEntry type="library" name="angular-ui-router" level="application" />
+    <orderEntry type="library" name="ui-bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="ui-bootstrap-tpls" level="application" />
+    <orderEntry type="library" name="ocLazyLoad" level="application" />
+    <orderEntry type="library" name="angular-cookies" level="application" />
+    <orderEntry type="library" name="angular-strap" level="application" />
+    <orderEntry type="library" name="angular-strap.tpl" level="application" />
+    <orderEntry type="library" name="angular-file-upload" level="application" />
+    <orderEntry type="library" name="angular-route-segment" level="application" />
+    <orderEntry type="library" name="ocLazyLoad.core" level="application" />
+    <orderEntry type="library" name="angular2" level="application" />
   </component>
 </module>
