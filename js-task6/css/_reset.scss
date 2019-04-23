@@ -1,12 +1,8 @@
 html {font-size: 62.5%;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
+form,fieldset,input,textarea,p,blockquote {
     padding: 0;
     margin: 0;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 fieldset,img {
     border: 0;
@@ -18,10 +14,10 @@ address,caption,cite,code,dfn,em,strong,th,var {
 ol,ul {
     list-style: none;
 }
-caption,th {
+caption{
     text-align: left;
 }
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
     font-weight: normal;
     font-size: 100%;
 }

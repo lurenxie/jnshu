@@ -2,13 +2,9 @@ html {
   font-size: 62.5%; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
-form, fieldset, input, textarea, p, blockquote, th, td {
+form, fieldset, input, textarea, p, blockquote {
   padding: 0;
   margin: 0; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
 
 fieldset, img {
   border: 0; }
@@ -20,10 +16,10 @@ address, caption, cite, code, dfn, em, strong, th, var {
 ol, ul {
   list-style: none; }
 
-caption, th {
+caption {
   text-align: left; }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 100%; }
 
@@ -82,8 +78,8 @@ input[type=range]::-webkit-slider-thumb {
   align-items: center;
   float: left;
   width: 25rem;
-  height: 100rem;
-  padding: 3rem 0 0 0;
+  height: calc(100vh - 5rem);
+  padding-top: 3rem;
   background-color: #333;
   color: #fff; }
   .home-nav .left-div {
@@ -101,7 +97,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     padding: 1rem 0; }
   .home-nav .bg-manage:hover {
-    background-color: #999; }
+    background-color: #808080; }
   .home-nav .bg-manage-son {
     display: flex;
     flex-direction: column;
@@ -112,12 +108,12 @@ input[type=range]::-webkit-slider-thumb {
       width: 100%;
       padding: 1rem 6.8rem; }
     .home-nav .bg-manage-son .article-details:hover {
-      background-color: #999; }
+      background-color: #808080; }
     .home-nav .bg-manage-son .article-list {
       width: 100%;
       padding: 1rem 6.8rem; }
     .home-nav .bg-manage-son .article-list:hover {
-      background-color: #999; }
+      background-color: #808080; }
     .home-nav .bg-manage-son .bg-manage-text {
       font-size: 1.4rem; }
   .home-nav .mg-manage {
@@ -128,7 +124,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     padding: 1rem 0; }
   .home-nav .mg-manage:hover {
-    background-color: #999; }
+    background-color: #808080; }
   .home-nav .ct-manage {
     display: flex;
     flex-direction: row;
@@ -137,12 +133,13 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     padding: 1rem 0; }
   .home-nav .ct-manage:hover {
-    background-color: #999; }
+    background-color: #808080; }
 
 .home-main {
   float: right;
   width: calc(100% - 25rem);
-  height: 100rem;
+  height: calc(100vh - 5rem);
+  overflow: auto;
   background-color: #f5f5f5; }
 
 /*# sourceMappingURL=home.css.map */

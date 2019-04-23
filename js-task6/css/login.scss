@@ -8,7 +8,7 @@ body {
   .login {
     @include module-flex(column,center,center);
     width: 30rem;
-    margin: 20rem;
+    margin: 20rem auto;
     padding: 2rem;
     background-color: #d0d3d9;
     border-radius: 5px;

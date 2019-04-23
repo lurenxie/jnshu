@@ -1,0 +1,111 @@
+<div class="artList-sizer">
+    <div class="form-group">
+        <b>更新时间</b>
+        <input def-laydate class="form-control" type="text" ng-model="laydateStartAt"/>
+        <b>&emsp;—&emsp;&emsp;</b>
+        <input def-laydate class="form-control" type="text" ng-model="laydateEndAt"/>
+    </div>
+    <div class="form-group">
+        <b>类&emsp;&emsp;型</b>
+        <select class="form-control" ng-model="searchParams.type">
+            <option>全部</option>
+            <option value="0">首页Banner</option>
+            <option value="1">找职位Banner</option>
+            <option value="2">找精英Banner</option>
+            <option value="3">行业大图</option>
+        </select>
+        <b>状&emsp;&emsp;态</b>
+        <select class="form-control" ng-model="searchParams.status">
+            <option>全部</option>
+            <option value="2">上线</option>
+            <option value="1">草稿</option>
+        </select>
+    </div>
+    <div class="sizer-btnGroup">
+        <button class="btn btn-primary btn-danger" ng-click="headClear()">清空</button>
+        <button style="margin-left: 0.5rem;" class="btn btn-primary btn-success" ng-click="headSearch()">搜索</button>
+    </div>
+</div>
+<div class="artList-table">
+    <div class="artList-tableName">
+        <b>Article列表</b>
+        <button class="btn btn-primary btn-xs btn-success" ng-click="addArt()">+新增</button>
+    </div>
+    <div class="artList-tableCen">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>更新时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td class="artList-td">{{$index + 1}}</td>
+                    <td class="artList-td">{{item.title}}</td>
+                    <td class="artList-td">{{item.type | artTypeFil}}</td>
+                    <td class="artList-td">{{item.createAt | date : 'yyyy-MM-dd'}}</td>
+                    <td class="artList-td">{{item.updateAt | date : 'yyyy-MM-dd'}}</td>
+                    <td class="artList-td">{{item.author}}</td>
+                    <td class="artList-td">{{item.status | artStatusFil}}</td>
+                    <td class="artList-td">
+                        <a ng-click="changeSta($index,item.status)" href="">{{item.status | artStatusBtnFil}}</a>
+                        <a ng-click="compileArt($index)" href="">编辑</a>
+                        <a ng-click="deleteArt($index)" href="">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<ul class="artList-foot">
+    <li class="rowLi">
+        <span>每页显示</span>
+        <input
+            class="form-control"
+            type="text"
+            ng-change = "artTicleChange()"
+            ng-model = "searchParams.size"
+        >
+        <span>条</span>
+    </li>
+    <li>
+        <ul uib-pagination=""
+            boundary-links = true
+            direction-links =true
+            first-text = "首页"
+            last-text = "末页"
+            previous-text = "<"
+            next-text = ">"
+            force-ellipses = true
+            items-per-page = "searchParams.size"
+            max-size = 5
+            total-items = "pageNub"
+            ng-click="artTicleChange()"
+            ng-model="searchParams.page"
+        >
+        </ul>
+    </li>
+    <li class="rowLi">
+        <span>去第</span>
+        <input class="form-control" type="text" ng-model="searchParams.page">
+        <span>页</span>
+    </li>
+    <li><a class="btn btn-default" ng-click="artTicleChange()">确定</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+

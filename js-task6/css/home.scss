@@ -38,8 +38,9 @@
   @include module-flex(column,flex-start,center);
   float: left;
   width: 25rem;
-  height: 100rem;
-  padding: 3rem 0 0 0;
+  height: calc(100vh - 5rem);
+  //height: 100rem;
+  padding-top: 3rem;
   background-color: #333;
   color: #fff;
   .left-div {
@@ -59,7 +60,7 @@
     //border-left: 0.2rem solid #fff;
   }
   .bg-manage:hover {
-    background-color: #999;
+    background-color: #808080;
   }
   .bg-manage-son {
     @include module-flex(column,center,flex-start);
@@ -70,14 +71,14 @@
       padding: 1rem 6.8rem;
     }
     .article-details:hover {
-      background-color: #999;
+      background-color: #808080;
     }
     .article-list {
       width: 100%;
       padding: 1rem 6.8rem;
     }
     .article-list:hover {
-      background-color: #999;
+      background-color: #808080;
     }
     .bg-manage-text {
       font-size: 1.4rem;
@@ -89,7 +90,7 @@
     padding: 1rem 0;
   }
   .mg-manage:hover {
-    background-color: #999;
+    background-color: #808080;
   }
   .ct-manage {
     @include module-flex(row,space-between,center);
@@ -97,13 +98,14 @@
     padding: 1rem 0;
   }
   .ct-manage:hover {
-    background-color: #999;
+    background-color: #808080;
   }
 }
 .home-main {
   float: right;
   width: calc(100% - 25rem);
-  height: 100rem;
+  height: calc(100vh - 5rem);
+  overflow:auto;
   background-color: #f5f5f5;
 }
 

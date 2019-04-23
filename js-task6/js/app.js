@@ -1,5 +1,5 @@
 'use strict';
-var myApp = angular.module('myApp', ['ui.router','oc.lazyLoad','ngMessages']);
+var myApp = angular.module('myApp', ['ui.router','oc.lazyLoad','ngMessages','ui.bootstrap','angularFileUpload']);
 myApp.config(["$stateProvider","$urlRouterProvider","$ocLazyLoadProvider",function ($stateProvider,$urlRouterProvider,$ocLazyLoadProvider) {
     //封装下懒加载的设置
     var lazyLoadFun = function(pageJsUrl) {
@@ -18,17 +18,25 @@ myApp.config(["$stateProvider","$urlRouterProvider","$ocLazyLoadProvider",functi
         .state('home',{
             url: "/home",
             templateUrl: "/html/home.html",
-           controller: "homeCtrl",
+            controller: "homeCtrl",
             resolve: {
                 loadMyCtrl: lazyLoadFun(["js/home.js","css/home.css"])
             }
         })
-        .state('home.articleList',{
-            url: "/articleList",
-            templateUrl: "/html/article/articleList.html",
+        .state('home.artList',{
+            url: "/artList?size&page&type&startAt&endAt&status",
+            templateUrl: "/html/article/artList.html",
+            controller: "artListCtrl",
+            resolve: {
+                loadMyCtrl: lazyLoadFun(["js/artList.js","css/artList.css"])
+            }
         })
-        .state('home.articleDetails',{
-            url: "/articleDetails",
-            templateUrl: "/html/article/articleDetails.html",
+        .state('home.artDetails',{
+            url: "/artDetails?id",
+            templateUrl: "/html/article/artDetails.html",
+            controller: "artDetailsCtrl",
+            resolve: {
+                loadMyCtrl: lazyLoadFun(["js/artDetails.js","css/artDetails.css"])
+            }
         })
 }]);

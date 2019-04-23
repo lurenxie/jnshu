@@ -1,4 +1,4 @@
-angular.module('myApp').controller("homeCtrl",function ($scope) {
+angular.module('myApp').controller("homeCtrl",function ($scope,$state) {
     //封装初始化各种效果函数
     var initializerFun = function() {
         $scope.spanLeft1 = true;
@@ -35,8 +35,8 @@ angular.module('myApp').controller("homeCtrl",function ($scope) {
         if ($scope.artListStyle !== null) {
             $scope.artListStyle = null;
             $scope.artDetailsStyle = {"background-color" : "#999"};
+            $state.go('home.artList');
         }
-        else ;
     };
     //后台管理子页面详情管理点击事件
     $scope.artListClick = function () {
@@ -44,8 +44,8 @@ angular.module('myApp').controller("homeCtrl",function ($scope) {
         if ($scope.artDetailsStyle !== null) {
             $scope.artDetailsStyle = null;
             $scope.artListStyle = {"background-color" : "#999"};
+            $state.go('home.artDetails');
         }
-        else ;
     };
     //信息管理点击事件
     $scope.mgManageClick = function () {
