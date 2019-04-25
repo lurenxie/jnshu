@@ -4,13 +4,13 @@
         <form name="myForm">
             <div class="article-details-row">
                 <label class="col-md-2 article-label">标题名称</label>
-                <div class="col-md-8"><input class="article-input form-control" type="text" ng-model="title" required></div>
+                <div class="col-md-8"><input class="article-input form-control" type="text" ng-model="artDetailsParams.title" required></div>
                 <div class="col-md-2"></div>
             </div>
             <div class="article-details-row">
                 <label class="col-md-2 article-label">类&emsp;&emsp;型</label>
-                <div  class="col-md-2">
-                    <select class="form-control" ng-model="type" ng-change="changeIndustryHide()" required>
+                <div  class="col-md-3">
+                    <select class="form-control" ng-model="artDetailsParams.type" ng-change="changeIndustryHide()" required>
                         <option value="">请选择</option>
                         <option value="0">首页Banner</option>
                         <option value="1">找职位Banner</option>
@@ -18,8 +18,8 @@
                         <option value="3">行业大图</option>
                     </select>
                 </div>
-                <div  class="col-md-2">
-                    <select class="form-control" ng-if="type==3" ng-model="industry" required>
+                <div  class="col-md-3">
+                    <select class="form-control" ng-if="artDetailsParams.type==3" ng-model="artDetailsParams.industry" required>
                         <option value>请选择</option>
                         <option value="0">移动互联网</option>
                         <option value="1">电子商务</option>
@@ -30,16 +30,23 @@
                         <option value="6">游戏</option>
                     </select>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-4"></div>
             </div>
             <div class="article-details-row">
                 <label class="col-md-2 article-label">说&emsp;&emsp;明</label>
-                <div class="col-md-8"><input class="article-input form-control" type="text" ng-model="content"></div>
+                <!--<div class="col-md-8"><input class="article-input form-control" type="text" ng-model="content"></div>-->
+                <!--<div id="editor" class="col-md-8"></div>-->
+                <div class="col-md-8">
+                    <div class="wang-editor">
+                        <div id="div1" class="toolbar"></div>
+                        <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度--></div>
+                    </div>
+                </div>
                 <div class="col-md-2"></div>
             </div>
             <div class="article-details-row">
                 <label class="col-md-2 article-label">跳转链接</label>
-                <div class="col-md-8"><input class="article-input form-control" type="text" ng-model="url" required></div>
+                <div class="col-md-8"><input class="article-input form-control" type="text" ng-model="artDetailsParams.url" required></div>
                 <div class="col-md-2"></div>
             </div>
             <div class="article-details-fStart">

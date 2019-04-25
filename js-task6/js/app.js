@@ -32,7 +32,7 @@ myApp.config(["$stateProvider","$urlRouterProvider","$ocLazyLoadProvider",functi
             }
         })
         .state('home.artDetails',{
-            url: "/artDetails?id",
+            url: "/artDetails?id&size&page",
             templateUrl: "/html/article/artDetails.html",
             controller: "artDetailsCtrl",
             resolve: {

@@ -11,5 +11,6 @@
     <orderEntry type="library" name="angular-messages" level="application" />
     <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="library" name="loading-bar" level="application" />
+    <orderEntry type="library" name="wangEditor" level="application" />
   </component>
 </module>

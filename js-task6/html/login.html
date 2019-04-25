@@ -1,13 +1,13 @@
 <div class="login">
-    <span>后台登录</span>
+    <span>bug制造商</span>
     <form name="loginForm">
         <div>
             <span class="glyphicon glyphicon-user"></span>
-            <input id="input1" ng-model="name" type="text" placeholder="Firstname" name="name" required/>
+            <input id="input1" ng-model="name" type="text" placeholder="请输入用户名" name="name" required/>
         </div>
         <div>
             <span class="glyphicon glyphicon-asterisk"></span>
-            <input id="input2" ng-model="pwd" type="password" placeholder="Password" name="pwd" required/>
+            <input id="input2" ng-model="pwd" type="password" placeholder="请输入密码" name="pwd" required/>
         </div>
         <p id="errorMessage">{{callbackMessages}}</p>
         <button ng-click="longinClick()">submit</button>

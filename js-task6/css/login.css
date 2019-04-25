@@ -29,7 +29,7 @@ q:before, q:after {
 abbr, acronym {
   border: 0; }
 
-button, input[type=text], input[type=password], input[type=submit] {
+button, input[type=password], input[type=submit] {
   padding: 0;
   outline: none;
   border: 0; }
@@ -46,17 +46,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #29bde0;
-  background-image: url(../images/image.jpg); }
+  height: 100vh;
+  background-image: url(../images/image2.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%; }
   body .login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0.5;
     width: 30rem;
     margin: 20rem auto;
     padding: 2rem;
-    background-color: #d0d3d9;
+    background-color: #707b75;
     border-radius: 5px; }
     body .login div {
       display: flex;
@@ -64,37 +68,41 @@ body {
       justify-content: center;
       align-items: center;
       margin: 1rem 0;
-      background-color: #fff;
+      background-color: #868e83;
       border-radius: 2px; }
       body .login div span {
         font-size: 1.8rem;
-        color: #29bde0;
+        color: #3a4446;
         margin: 1rem;
-        border-right: 0.1rem solid #d7d7d7;
+        border-right: 0.1rem solid #3a4446;
         padding-right: 1rem; }
     body .login span {
       font-size: 1.8rem;
-      color: #29bde0; }
+      color: #3a4446; }
     body .login input[type=text] {
       display: block;
       width: 20rem;
       height: 3rem;
+      border: 0;
       font-size: 1.5rem;
-      color: #000;
-      background-color: #fff; }
+      color: #20282b;
+      background-color: #868e83; }
     body .login input[type=password] {
       display: block;
       width: 20rem;
       height: 3rem;
       font-size: 1.5rem;
-      color: #000; }
+      color: #20282b;
+      background-color: #868e83; }
     body .login button {
       width: 100%;
       height: 3rem;
       margin-top: 4rem;
-      background-color: #fab344;
+      background-color: #596460;
       font-size: 2rem;
-      color: #fff;
+      color: #bdc0b5;
       border-radius: 2px; }
+    body .login button:hover {
+      background-color: #20282b; }
 
 /*# sourceMappingURL=login.css.map */
