@@ -7,48 +7,13 @@
         <span style="color: #e8e8e8;">|</span>
         <div class="header-right-div"><span class="header-right-text">admin</span></div>
         <span style="color: #e8e8e8;">|</span>
-        <div class="header-right-div"><span class="glyphicon glyphicon-off"></span></div>
+        <div class="header-right-div logout" ng-click="exitHome()"><span class="glyphicon glyphicon-off"></span></div>
     </div>
 </div>
 <div class="home-nav">
-    <div class="bg-manage" ng-style="manageStyle1" ng-click="bgManageClick()">
-        <div ng-style="leftDivStyle1" class="left-div">
-            <span class="glyphicon glyphicon-pencil left-span"></span>
-            <span class="bg-manage-text middle-span">后台管理</span>
-        </div>
-        <div class="right-div">
-            <span class="glyphicon glyphicon-chevron-left" ng-show = 'spanLeft1'></span>
-            <span class="glyphicon glyphicon-chevron-down" ng-hide = 'spanLeft1'></span>
-        </div>
-    </div>
-    <div class="bg-manage-son" ng-hide="bgManageSon">
-        <div ng-style="artDetailsStyle" class="article-details" ng-click="artDetailsClick()">
-            <span class="bg-manage-text">列表管理</span>
-        </div>
-        <!--<div ng-style="artListStyle" class="article-list" ng-click="artListClick()">-->
-        <!--<span class="bg-manage-text">详情管理</span>-->
-        <!--</div>-->
-    </div>
-    <div class="mg-manage" ng-style="manageStyle2" ng-click="mgManageClick()">
-        <div ng-style="leftDivStyle2" class="left-div">
-            <span class="glyphicon glyphicon-pencil left-span"></span>
-            <span class="bg-manage-text middle-span">信息管理</span>
-        </div>
-        <div class="right-div">
-            <span class="glyphicon glyphicon-chevron-left" ng-show = 'spanLeft2'></span>
-            <span class="glyphicon glyphicon-chevron-down" ng-hide = 'spanLeft2'></span>
-        </div>
-    </div>
-    <div class="ct-manage" ng-style="manageStyle3" ng-click="ctManageClick()">
-        <div ng-style="leftDivStyle3" class="left-div">
-            <span class="glyphicon glyphicon-pencil left-span"></span>
-            <span class="bg-manage-text middle-span left-span">内容管理</span>
-        </div>
-        <div class="right-div">
-            <span class="glyphicon glyphicon-chevron-left" ng-show = 'spanLeft3'></span>
-            <span class="glyphicon glyphicon-chevron-down" ng-hide = 'spanLeft3'></span>
-        </div>
-    </div>
+    <my-Collapse ng-repeat="item in expanders track by $index" page-title="item.title">
+        <div class="bg-manage-son" ng-repeat="texts in item.text" ui-sref="{{texts.url}}"><span class="bg-manage-text">{{texts.context}}</span></div>
+    </my-Collapse>
 </div>
 <div class="home-main" data-ui-view="">
     <h1>welcome!</h1>

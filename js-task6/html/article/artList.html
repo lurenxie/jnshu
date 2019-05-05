@@ -1,14 +1,14 @@
 <div class="artList-sizer">
     <div class="form-group">
         <b>更新时间</b>
-        <input def-laydate class="form-control" type="text" ng-model="laydateStartAt"/>
+        <input def-laydate class="form-control" type="text" ng-change="laydateLogic()" ng-model="laydateStartAt"/>
         <b>&emsp;—&emsp;&emsp;</b>
-        <input def-laydate class="form-control" type="text" ng-model="laydateEndAt"/>
+        <input def-laydate class="form-control" type="text" ng-change="laydateLogic()" ng-model="laydateEndAt"/>
     </div>
     <div class="form-group">
         <b>类&emsp;&emsp;型</b>
         <select class="form-control" ng-model="searchParams.type">
-            <option value>全部</optionvalue>
+            <option value>全部</option>
             <option value="0">首页Banner</option>
             <option value="1">找职位Banner</option>
             <option value="2">找精英Banner</option>

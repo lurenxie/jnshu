@@ -37,10 +37,11 @@
                 <!--<div class="col-md-8"><input class="article-input form-control" type="text" ng-model="content"></div>-->
                 <!--<div id="editor" class="col-md-8"></div>-->
                 <div class="col-md-8">
-                    <div class="wang-editor">
-                        <div id="div1" class="toolbar"></div>
-                        <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度--></div>
-                    </div>
+                    <!--<div class="wang-editor">-->
+                        <!--<div id="div1" class="toolbar"></div>-->
+                        <!--<div id="div2" class="text"> &lt;!&ndash;可使用 min-height 实现编辑区域自动增加高度&ndash;&gt;</div>-->
+                    <!--</div>-->
+                    <my-editor></my-editor>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -103,11 +104,11 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8 submit-button">
                     <div>
-                        <button class="btn btn-success" ng-click="pubArticle()"
+                        <button class="btn btn-success" ng-click="pubArticle(a=2)"
                                 ng-disabled="!myForm.$valid||imageSrc==undefined"
                                 disabled="disabled"
                                 >立即上线</button>
-                        <button class="btn btn-success" ng-click="saveArticle()"
+                        <button class="btn btn-success" ng-click="pubArticle(a=1)"
                                 ng-disabled="!myForm.$valid||imageSrc==undefined"
                                 disabled="disabled">存为草稿</button>
                     </div>

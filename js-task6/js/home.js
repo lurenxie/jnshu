@@ -1,52 +1,42 @@
-angular.module('myApp').controller("homeCtrl",function ($scope,$state) {
-    //封装初始化各种效果函数
-    var initializerFun = function() {
-        $scope.spanLeft1=true;
-        $scope.spanLeft2=true;
-        $scope.spanLeft3=true;
-        $scope.bgManageSon = true;
-        $scope.leftDivStyle1 = null;
-        $scope.leftDivStyle2 = null;
-        $scope.leftDivStyle3 = null;
-        $scope.manageStyle1 = null;
-        $scope.manageStyle2 = null;
-        $scope.manageStyle3 = null;
-    };
-    initializerFun();
-    //后台管理点击
-    $scope.bgManageClick = function () {
-        if ($scope.manageStyle1 === null) {
-            initializerFun();
-            $scope.spanLeft1 = false;
-            $scope.bgManageSon = false;
-            $scope.manageStyle1 = {"border-left": "0.2rem solid #fff", "background-color": "#999"};
-            $scope.leftDivStyle1 = {"margin": " 0 0 0 1.8rem"};
-        } else {initializerFun();}
-    };
-    //后台管理子页面列表管理点击
-    $scope.artDetailsClick = function () {
-        $scope.manageStyle1 = {"border-left" : "0.2rem solid #fff"};
-        $scope.artDetailsStyle = {"background-color" : "#999"};
-        $state.go('home.artList');
-    };
-    //信息管理点击
-    $scope.mgManageClick = function () {
-        if ($scope.manageStyle2 === null) {
-            initializerFun();
-            $scope.spanLeft2 = false;
-            $scope.manageStyle2 = {"border-left": "0.2rem solid #fff", "background-color": "#999"};
-            $scope.leftDivStyle2 = {"margin": " 0 0 0 1.8rem"};
-            $state.go('home');
-        } else {initializerFun();}
-    };
-    //内容管理点击
-    $scope.ctManageClick = function () {
-        if ($scope.manageStyle3 === null) {
-            initializerFun();
-            $scope.spanLeft3 = false;
-            $scope.manageStyle3 = {"border-left": "0.2rem solid #fff", "background-color": "#999"};
-            $scope.leftDivStyle3 = {"margin": " 0 0 0 1.8rem"};
-            $state.go('home');
-        } else {initializerFun();}
+angular.module('myApp').controller("homeCtrl",function ($scope,$state,httpService,$cookieStore) {
+//封装了左侧导航栏，这里可以直接添加相应的栏
+    $scope.expanders = [{
+        title: '后台管理',
+        text: [{context: '模块管理',url: 'home.artList'}, {context: '角色管理',url: 'home.artList'}, {context: '密码修改',url: 'home.artList'}, {context: '账户管理',url: 'home.artList'} ]
+    }, {
+        title: '信息管理',
+        text: [{context: '公司列表',url: 'home.artList'}, {context: '职业列表',url: 'home.artList'}]
+    }, {
+        title: '内容管理',
+        text: [{context: 'Article列表',url: 'home.artList'}]
     }
+    ];
+    $scope.expanders1 = []; //记录所有菜单
+    $scope.addExpander = function (expander) {
+        $scope.expanders1.push(expander);
+    };
+    $scope.goToExpander = function (selectedExpander) {
+        $scope.expanders1.forEach(function (item, index) {//隐藏非当前选项卡,实现切换功能
+            if (item !== selectedExpander) {
+                item.showMe = false;
+            }
+        })
+    };
+    //退出登录
+    $scope.exitHome = function () {
+        httpService.exitHome().then(
+            function successCallback(response) {
+                if (response.data.code === 0) {
+                    $cookieStore.put("loginStatus",false);
+                    sessionStorage.clear();
+                    $state.go('login');
+                }
+                else {
+                    alert('code:' + response.data.code + ' message:' + response.data.message);
+                }
+                },
+            function errorCallback(response) {
+                console.log(response);
+                });
+    };
 });

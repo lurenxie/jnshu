@@ -67,6 +67,8 @@ input[type=range]::-webkit-slider-thumb {
     .home-header .header-right .header-right-div {
       padding: 1.5rem;
       margin: 0 0.5rem; }
+    .home-header .header-right .logout:hover {
+      background-color: #808080; }
     .home-header .header-right .header-right-text {
       font-size: 1.4rem;
       color: #337ab7; }
@@ -89,6 +91,17 @@ input[type=range]::-webkit-slider-thumb {
   .home-nav .middle-span {
     margin-left: 1rem;
     font-size: 1.6rem; }
+  .home-nav .my-collapse {
+    width: 100%; }
+  .home-nav .bg-manage-son {
+    width: 100%;
+    padding: 1rem 6.8rem; }
+  .home-nav .bg-manage-son:hover {
+    background-color: #808080; }
+  .home-nav .bg-manage-text {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center; }
   .home-nav .bg-manage {
     display: flex;
     flex-direction: row;
@@ -98,24 +111,6 @@ input[type=range]::-webkit-slider-thumb {
     padding: 1rem 0; }
   .home-nav .bg-manage:hover {
     background-color: #808080; }
-  .home-nav .bg-manage-son {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%; }
-    .home-nav .bg-manage-son .article-details {
-      width: 100%;
-      padding: 1rem 6.8rem; }
-    .home-nav .bg-manage-son .article-details:hover {
-      background-color: #808080; }
-    .home-nav .bg-manage-son .article-list {
-      width: 100%;
-      padding: 1rem 6.8rem; }
-    .home-nav .bg-manage-son .article-list:hover {
-      background-color: #808080; }
-    .home-nav .bg-manage-son .bg-manage-text {
-      font-size: 1.4rem; }
   .home-nav .mg-manage {
     display: flex;
     flex-direction: row;
